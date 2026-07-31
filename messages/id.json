@@ -1,0 +1,32 @@
+{
+  "Metadata": {
+    "title": "Royal Prima Hospital",
+    "description": "Pelayanan kesehatan berkualitas untuk Anda dan keluarga."
+  },
+  "Navigation": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "services": "Layanan",
+    "doctors": "Dokter",
+    "contact": "Kontak"
+  },
+  "HomePage": {
+    "badge": "Setup berhasil",
+    "title": "Next.js, Tailwind CSS, next-intl dan Swiper",
+    "description": "Fondasi project sudah siap digunakan untuk membangun website yang modern, responsif dan mendukung banyak bahasa.",
+    "slider": {
+      "slideOne": {
+        "title": "Pelayanan Kesehatan Berkualitas",
+        "description": "Memberikan pelayanan medis yang aman, profesional dan berorientasi kepada pasien."
+      },
+      "slideTwo": {
+        "title": "Dokter dan Tenaga Medis Profesional",
+        "description": "Didukung oleh dokter spesialis dan tenaga kesehatan yang berpengalaman."
+      },
+      "slideThree": {
+        "title": "Fasilitas Medis yang Lengkap",
+        "description": "Fasilitas kesehatan modern untuk mendukung diagnosis dan perawatan pasien."
+      }
+    }
+  }
+}
