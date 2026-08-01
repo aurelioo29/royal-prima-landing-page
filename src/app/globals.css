@@ -1,16 +1,19 @@
 @import "tailwindcss";
 
-/* Swiper core */
 @import "swiper/css";
-
-/* Modul Swiper yang digunakan */
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
+@import "swiper/css/effect-fade";
 
-/* Global styles */
 :root {
+  --site-header-height: 104px;
+
   --background: #ffffff;
-  --foreground: #1f2937;
+  --foreground: #123b56;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -19,6 +22,384 @@ html {
 
 body {
   margin: 0;
+
   background: var(--background);
   color: var(--foreground);
+
+  font-family: var(--font-primary), Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:
+    var(--font-secondary), var(--font-primary), Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+@keyframes footer-logo-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.footer-logo-float {
+  animation: footer-logo-float 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-logo-float {
+    animation: none;
+  }
+}
+
+/* Blog Hero Swiper */
+
+.blog-hero-swiper {
+  --swiper-pagination-color: #ffffff;
+  --swiper-pagination-bullet-inactive-color: #ffffff;
+}
+
+.blog-hero-swiper .swiper-pagination {
+  bottom: 32px !important;
+  left: 50% !important;
+
+  width: auto !important;
+
+  transform: translateX(-50%);
+}
+
+.blog-hero-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+
+  margin: 0 5px !important;
+
+  border: 1px solid rgb(255 255 255 / 55%);
+  border-radius: 999px;
+
+  background: transparent;
+
+  opacity: 1;
+
+  transition:
+    width 300ms ease,
+    background-color 300ms ease,
+    border-color 300ms ease;
+}
+
+.blog-hero-swiper .swiper-pagination-bullet-active {
+  width: 32px;
+
+  border-color: #ffffff;
+  background: #ffffff;
+}
+
+/* Animasi isi slide */
+
+.blog-hero-swiper .swiper-slide .blog-hero-content {
+  opacity: 0;
+
+  transform: translateY(28px);
+
+  transition:
+    opacity 350ms ease,
+    transform 350ms ease;
+}
+
+.blog-hero-swiper .swiper-slide-active .blog-hero-content {
+  opacity: 1;
+
+  transform: translateY(0);
+
+  transition:
+    opacity 750ms cubic-bezier(0.22, 1, 0.36, 1) 180ms,
+    transform 750ms cubic-bezier(0.22, 1, 0.36, 1) 180ms;
+}
+
+@media (max-width: 639px) {
+  .blog-hero-swiper .swiper-pagination {
+    bottom: 22px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-hero-swiper .swiper-slide .blog-hero-content,
+  .blog-hero-swiper .swiper-slide-active .blog-hero-content {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* Home Hero Slider */
+
+.hero-responsive-image {
+  object-fit: cover;
+  object-position: var(--hero-mobile-position, center center);
+}
+
+/*
+ * Jika gambar khusus mobile tidak tersedia,
+ * tampilkan gambar desktop secara utuh di mobile.
+ */
+.hero-responsive-image[data-has-mobile-image="false"] {
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .hero-responsive-image,
+  .hero-responsive-image[data-has-mobile-image="false"] {
+    object-fit: cover;
+
+    object-position: var(--hero-desktop-position, center center);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-responsive-image {
+    transition: none;
+  }
+}
+
+/* =========================================================
+   Home Partners Marquee
+========================================================= */
+
+@keyframes home-partners-marquee-left {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes home-partners-marquee-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.home-partners-marquee {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  user-select: none;
+}
+
+.home-partners-row {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.home-partners-track {
+  display: flex;
+
+  width: max-content;
+
+  will-change: transform;
+}
+
+.home-partners-track-left {
+  animation-name: home-partners-marquee-left;
+
+  animation-duration: var(--home-partners-duration, 44s);
+
+  animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+}
+
+.home-partners-track-right {
+  animation-name: home-partners-marquee-right;
+
+  animation-duration: var(--home-partners-duration, 44s);
+
+  animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+}
+
+.home-partners-group {
+  display: flex;
+
+  flex-shrink: 0;
+
+  align-items: stretch;
+
+  gap: 12px;
+
+  padding-right: 12px;
+}
+
+.home-partners-item {
+  width: 180px;
+
+  flex-shrink: 0;
+}
+
+/*
+ * Hover pada area mitra akan menghentikan
+ * pergerakan kedua jalur.
+ */
+.home-partners-marquee:hover .home-partners-track,
+.home-partners-marquee:focus-within .home-partners-track {
+  animation-play-state: paused;
+}
+
+@media (min-width: 640px) {
+  .home-partners-group {
+    gap: 16px;
+
+    padding-right: 16px;
+  }
+
+  .home-partners-item {
+    width: 210px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-partners-group {
+    gap: 20px;
+
+    padding-right: 20px;
+  }
+
+  .home-partners-item {
+    width: 230px;
+  }
+}
+
+/*
+ * Reduced motion:
+ * pergerakan dihentikan dan logo ditampilkan
+ * sebagai grid statis.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .home-partners-row {
+    overflow: visible;
+  }
+
+  .home-partners-track,
+  .home-partners-track-left,
+  .home-partners-track-right {
+    width: 100%;
+
+    animation: none;
+
+    transform: none;
+  }
+
+  .home-partners-group {
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    padding-right: 0;
+  }
+
+  .home-partners-group-duplicate {
+    display: none;
+  }
+
+  .home-partners-item {
+    width: auto;
+
+    min-width: 170px;
+
+    max-width: 230px;
+
+    flex: 1 1 180px;
+  }
+}
+
+/* =========================================================
+   Home Testimonials
+========================================================= */
+
+.home-testimonials-swiper {
+  overflow: visible !important;
+
+  padding-bottom: 56px !important;
+}
+
+.home-testimonials-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+.home-testimonials-swiper .swiper-slide {
+  height: auto;
+}
+
+.home-testimonials-swiper .swiper-pagination {
+  bottom: 4px !important;
+}
+
+.home-testimonials-swiper .swiper-pagination-bullet {
+  width: 9px;
+  height: 9px;
+
+  margin: 0 5px !important;
+
+  border: 1px solid #8fc8df;
+
+  background: transparent;
+
+  opacity: 1;
+
+  transition:
+    width 300ms ease,
+    background-color 300ms ease,
+    border-color 300ms ease;
+}
+
+.home-testimonials-swiper .swiper-pagination-bullet-active {
+  width: 30px;
+
+  border-radius: 999px;
+
+  border-color: #0077b6;
+
+  background: #0077b6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-testimonials-swiper .swiper-wrapper {
+    transition-duration: 0ms !important;
+  }
+
+  .home-testimonials-swiper .swiper-pagination-bullet {
+    transition: none;
+  }
 }
