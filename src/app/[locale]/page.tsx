@@ -1,57 +1,24 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import HomeDepartments from "@/components/home/departments";
+import HomeHeroQuickInfo from "@/components/home/hero-quick-info";
+import HeroSlider from "@/components/home/hero-slider";
+import HomeLatestBlog from "@/components/home/latest-blog";
+import HomePartners from "@/components/home/partners";
+import HomeTestimonials from "@/components/home/testimonials";
 
-import HeroSlider, { type HeroSlide } from "@/components/home/HeroSlider";
-
-type HomePageProps = {
-  params: Promise<{
-    locale: string;
-  }>;
-};
-
-export default async function HomePage({ params }: HomePageProps) {
-  const { locale } = await params;
-
-  setRequestLocale(locale);
-
-  const t = await getTranslations("HomePage");
-
-  const slides: HeroSlide[] = [
-    {
-      id: 1,
-      title: t("slider.slideOne.title"),
-      description: t("slider.slideOne.description"),
-    },
-    {
-      id: 2,
-      title: t("slider.slideTwo.title"),
-      description: t("slider.slideTwo.description"),
-    },
-    {
-      id: 3,
-      title: t("slider.slideThree.title"),
-      description: t("slider.slideThree.description"),
-    },
-  ];
-
+export default function HomePage() {
   return (
-    <main>
-      <HeroSlider slides={slides} />
+    <>
+      <HeroSlider />
 
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-7xl">
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">
-            {t("badge")}
-          </span>
+      <HomeHeroQuickInfo />
 
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
-            {t("title")}
-          </h1>
+      <HomeDepartments />
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-            {t("description")}
-          </p>
-        </div>
-      </section>
-    </main>
+      <HomeTestimonials />
+
+      <HomePartners />
+
+      <HomeLatestBlog />
+    </>
   );
 }

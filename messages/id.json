@@ -1,32 +1,813 @@
 {
   "Metadata": {
-    "title": "Royal Prima Hospital",
-    "description": "Pelayanan kesehatan berkualitas untuk Anda dan keluarga."
+    "siteName": "RSU Royal Prima Medan",
+    "title": "RSU Royal Prima Medan | Rumah Sakit Umum di Kota Medan",
+    "description": "Website resmi RSU Royal Prima Medan. Temukan informasi layanan kesehatan, dokter spesialis, jadwal praktik, fasilitas rumah sakit, berita, dan informasi kontak.",
+    "openGraphAlt": "Gedung RSU Royal Prima Medan"
   },
+
   "Navigation": {
     "home": "Beranda",
     "about": "Tentang Kami",
+    "findDoctor": "Cari Dokter",
     "services": "Layanan",
-    "doctors": "Dokter",
-    "contact": "Kontak"
+    "departments": "Departemen",
+    "timetable": "Jadwal Dokter",
+    "appointment": "Janji Temu",
+    "info": "Info",
+    "career": "Karir",
+    "investorRelations": "Investor Relations",
+    "blog": "Berita",
+    "contact": "Kontak",
+    "faq": "Pertanyaan Umum"
   },
-  "HomePage": {
-    "badge": "Setup berhasil",
-    "title": "Next.js, Tailwind CSS, next-intl dan Swiper",
-    "description": "Fondasi project sudah siap digunakan untuk membangun website yang modern, responsif dan mendukung banyak bahasa.",
-    "slider": {
-      "slideOne": {
-        "title": "Pelayanan Kesehatan Berkualitas",
-        "description": "Memberikan pelayanan medis yang aman, profesional dan berorientasi kepada pasien."
-      },
-      "slideTwo": {
-        "title": "Dokter dan Tenaga Medis Profesional",
-        "description": "Didukung oleh dokter spesialis dan tenaga kesehatan yang berpengalaman."
-      },
-      "slideThree": {
-        "title": "Fasilitas Medis yang Lengkap",
-        "description": "Fasilitas kesehatan modern untuk mendukung diagnosis dan perawatan pasien."
+
+  "Header": {
+    "mainNavigation": "Navigasi utama",
+    "openSearch": "Buka pencarian",
+    "openMenu": "Buka menu",
+    "closeMenu": "Tutup menu",
+    "appointmentButton": "Buat Janji Temu",
+
+    "search": {
+      "eyebrow": "Pencarian",
+      "title": "Temukan informasi yang Anda butuhkan",
+      "placeholder": "Cari dokter, layanan, atau informasi kesehatan",
+      "button": "Cari",
+      "close": "Tutup pencarian"
+    },
+
+    "drawer": {
+      "eyebrow": "RSU Royal Prima Medan",
+      "title": "Pelayanan kesehatan untuk Anda dan keluarga",
+      "description": "Temukan informasi dokter, layanan rumah sakit, jadwal pelayanan, dan kebutuhan pasien melalui menu berikut.",
+      "navigationLabel": "Navigasi menu"
+    },
+
+    "contact": {
+      "title": "Hubungi Kami",
+      "phone": "Telepon",
+      "email": "Surel",
+      "address": "Alamat"
+    },
+
+    "social": {
+      "title": "Ikuti Kami",
+      "tiktok": "TikTok RSU Royal Prima Medan",
+      "instagram": "Instagram RSU Royal Prima Medan",
+      "facebook": "Facebook RSU Royal Prima Medan"
+    }
+  },
+
+  "Footer": {
+    "brand": {
+      "title": "RSU Royal Prima Medan",
+      "description": "Memberikan pelayanan kesehatan yang aman, profesional, peduli, dan berkualitas untuk masyarakat."
+    },
+
+    "contact": {
+      "items": {
+        "address": "Jl. Ayahanda No. 68A, Sei Putih Tengah, Medan Petisah, Kota Medan 20118",
+        "phone": "(061) 888 13182",
+        "email": "contact@royalprima.com"
       }
+    },
+
+    "menus": {
+      "hospital": {
+        "title": "Rumah Sakit",
+        "items": {
+          "about": "Tentang Kami",
+          "departments": "Departemen",
+          "doctors": "Dokter",
+          "timetable": "Jadwal Dokter",
+          "appointment": "Janji Temu",
+          "testimonials": "Testimoni"
+        }
+      },
+
+      "information": {
+        "title": "Informasi",
+        "items": {
+          "blog": "Berita",
+          "career": "Karir",
+          "investorRelations": "Investor Relations",
+          "contact": "Hubungi Kami",
+          "faq": "Pertanyaan Umum",
+          "privacy": "Kebijakan Privasi",
+          "terms": "Syarat dan Ketentuan"
+        }
+      }
+    },
+
+    "newsletter": {
+      "title": "Dapatkan Informasi Terbaru",
+      "description": "Daftarkan surel Anda untuk menerima informasi layanan dan berita kesehatan terbaru dari RSU Royal Prima Medan.",
+      "emailLabel": "Alamat surel",
+      "placeholder": "Masukkan alamat surel",
+      "button": "Daftar",
+      "success": "Fitur newsletter akan segera tersedia."
+    },
+
+    "social": {
+      "title": "Media sosial RSU Royal Prima Medan",
+
+      "items": {
+        "tiktok": "TikTok RSU Royal Prima Medan",
+        "instagram": "Instagram RSU Royal Prima Medan",
+        "facebook": "Facebook RSU Royal Prima Medan"
+      }
+    },
+
+    "backToTop": "Kembali ke bagian atas",
+
+    "copyright": "Hak Cipta © {year} RSU Royal Prima Medan. Seluruh hak cipta dilindungi."
+  },
+
+  "NotFound": {
+    "eyebrow": "Error 404",
+    "code": "404",
+    "title": "Halaman yang Anda cari tidak ditemukan",
+    "description": "Alamat halaman mungkin salah, telah dipindahkan, atau sudah tidak tersedia. Silakan kembali ke halaman utama RSU Royal Prima Medan.",
+    "homeButton": "Kembali ke Beranda",
+    "contactButton": "Hubungi Kami",
+    "helpText": "Membutuhkan bantuan medis atau informasi layanan?",
+    "helpDescription": "Tim RSU Royal Prima Medan siap membantu Anda mendapatkan informasi yang dibutuhkan.",
+    "phoneLabel": "Hubungi Contact Center",
+    "phoneNumber": "(061) 888 13182"
+  },
+
+  "ContactPage": {
+    "metadata": {
+      "title": "Hubungi Kami",
+      "description": "Hubungi RSU Royal Prima Medan untuk mendapatkan informasi layanan, dokter, fasilitas, dan lokasi rumah sakit.",
+      "imageAlt": "RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Hubungi Kami",
+      "title": "Informasi kesehatan dimulai dari komunikasi yang jelas",
+      "description": "Hubungi RSU Royal Prima Medan untuk mendapatkan informasi mengenai layanan, dokter, jadwal praktik, fasilitas, dan kebutuhan pasien.",
+      "primaryAction": "Kirim Pesan",
+      "imageAlt": "Pelayanan informasi RSU Royal Prima Medan",
+      "imageBadge": "Informasi dan pelayanan pasien"
+    },
+
+    "form": {
+      "eyebrow": "Formulir Kontak",
+      "title": "Sampaikan pertanyaan atau kebutuhan Anda",
+      "description": "Lengkapi formulir berikut dan pesan akan dibuka melalui aplikasi surel pada perangkat Anda.",
+
+      "fields": {
+        "name": {
+          "label": "Nama lengkap",
+          "placeholder": "Masukkan nama lengkap"
+        },
+        "email": {
+          "label": "Alamat surel",
+          "placeholder": "contoh@email.com"
+        },
+        "phone": {
+          "label": "Nomor telepon",
+          "placeholder": "08xxxxxxxxxx"
+        },
+        "subject": {
+          "label": "Keperluan",
+          "placeholder": "Contoh: Informasi jadwal dokter"
+        },
+        "message": {
+          "label": "Pesan",
+          "placeholder": "Tuliskan informasi yang Anda butuhkan"
+        }
+      },
+
+      "emailBody": {
+        "name": "Nama",
+        "email": "Surel",
+        "phone": "Nomor telepon"
+      },
+
+      "privacyNote": "Hindari mengirimkan hasil pemeriksaan, rekam medis, kata sandi, atau data pribadi sensitif melalui formulir ini.",
+      "submit": "Kirim Pesan",
+      "emailClientNotice": "Aplikasi surel pada perangkat Anda sedang dibuka."
+    },
+
+    "info": {
+      "eyebrow": "Informasi Kontak",
+      "title": "Kami siap membantu kebutuhan informasi Anda",
+      "description": "Hubungi rumah sakit melalui saluran komunikasi berikut. Pilih saluran yang paling sesuai dengan kebutuhan Anda.",
+      "note": "Untuk kondisi kegawatdaruratan, segera datang ke Instalasi Gawat Darurat atau hubungi rumah sakit secara langsung."
+    },
+
+    "channels": {
+      "phone": {
+        "eyebrow": "Telepon"
+      },
+      "email": {
+        "eyebrow": "Surel"
+      },
+      "location": {
+        "eyebrow": "Alamat Rumah Sakit"
+      }
+    },
+
+    "officeHours": {
+      "label": "Layanan Informasi",
+      "value": "Hubungi Contact Center untuk memastikan jadwal layanan, dokter, dan informasi kunjungan."
+    },
+
+    "map": {
+      "eyebrow": "Lokasi Rumah Sakit",
+      "title": "Temukan RSU Royal Prima Medan",
+      "description": "Lihat lokasi rumah sakit melalui peta dan gunakan petunjuk arah untuk membantu perjalanan Anda.",
+      "openMap": "Buka di Google Maps",
+      "iframeTitle": "Peta lokasi RSU Royal Prima Medan",
+      "addressLabel": "Alamat rumah sakit",
+      "phoneLabel": "Contact Center"
+    }
+  },
+
+  "InvestorRelationsPage": {
+    "metadata": {
+      "title": "Investor Relations",
+      "description": "Akses prospektus, laporan tahunan, laporan keuangan, dan informasi investor PT Royal Prima Tbk.",
+      "imageAlt": "Investor Relations PT Royal Prima Tbk"
+    },
+
+    "hero": {
+      "eyebrow": "Investor Relations",
+      "title": "Informasi perusahaan yang transparan dan mudah diakses",
+      "description": "Temukan prospektus, laporan tahunan, laporan keuangan, serta publikasi perusahaan PT Royal Prima Tbk dalam satu halaman.",
+      "primaryAction": "Lihat Dokumen",
+      "secondaryAction": "Hubungi Kami",
+      "imageAlt": "Tim dan tenaga profesional RSU Royal Prima Medan",
+      "imageBadge": "Dokumen Perusahaan",
+      "imageBadgeValue": "Prospektus, laporan tahunan, dan laporan keuangan"
+    },
+
+    "overview": {
+      "eyebrow": "Informasi Investor",
+      "title": "Dokumen dan laporan perusahaan",
+      "description": "Kami menyediakan akses terhadap dokumen perusahaan sebagai bentuk komitmen terhadap keterbukaan informasi, tata kelola yang baik, serta komunikasi yang transparan kepada pemegang saham dan masyarakat."
+    },
+
+    "sections": {
+      "annualReports": {
+        "eyebrow": "Laporan Perusahaan",
+        "title": "Annual Reports",
+        "description": "Laporan tahunan yang memuat informasi kinerja perusahaan, tata kelola, kegiatan operasional, dan perkembangan perusahaan setiap tahun."
+      },
+
+      "financialStatements": {
+        "eyebrow": "Kinerja Keuangan",
+        "title": "Financial Statements",
+        "description": "Laporan keuangan berkala PT Royal Prima Tbk yang dapat diakses berdasarkan tahun dan periode pelaporan.",
+        "yearLabel": "Tahun"
+      }
+    },
+
+    "documents": {
+      "prospectus": {
+        "eyebrow": "Prospektus",
+        "title": "Prospektus PT Royal Prima Tbk {year}",
+        "description": "Dokumen prospektus penawaran umum perdana saham PT Royal Prima Tbk yang memuat informasi perusahaan, kegiatan usaha, risiko, dan informasi penawaran saham."
+      },
+
+      "annualReport": {
+        "eyebrow": "Annual Report",
+        "title": "Annual Report {year}",
+        "description": "Laporan tahunan PT Royal Prima Tbk untuk periode tahun {year}."
+      },
+
+      "financialStatement": {
+        "eyebrow": "Financial Statement",
+        "title": "Laporan Keuangan {period} {year}",
+        "description": "Laporan keuangan PT Royal Prima Tbk untuk periode yang berakhir pada {period} {year}."
+      }
+    },
+
+    "periods": {
+      "march31": "31 Maret",
+      "june30": "30 Juni",
+      "september30": "30 September",
+      "december31": "31 Desember"
+    },
+
+    "card": {
+      "pdf": "PDF",
+      "openDocument": "Buka dokumen"
+    }
+  },
+
+  "CareerPage": {
+    "metadata": {
+      "title": "Karir",
+      "description": "Temukan informasi lowongan kerja dan kesempatan berkarir bersama RSU Royal Prima Medan.",
+      "imageAlt": "Karir dan tenaga profesional RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Karir",
+      "title": "Tumbuh dan berkembang bersama RSU Royal Prima Medan",
+      "description": "Bergabunglah dengan tenaga profesional yang berkomitmen memberikan pelayanan kesehatan berkualitas bagi masyarakat.",
+      "primaryAction": "Lihat Lowongan",
+      "secondaryAction": "Hubungi Tim Rekrutmen",
+      "imageAlt": "Tenaga profesional RSU Royal Prima Medan",
+      "imageBadge": "Kesempatan Berkarir",
+      "imageBadgeValue": "Berkembang bersama lingkungan kerja profesional"
+    },
+
+    "overview": {
+      "eyebrow": "Bergabung Bersama Kami",
+      "title": "Bangun karir yang berarti dalam pelayanan kesehatan",
+      "description": "RSU Royal Prima Medan membuka kesempatan bagi tenaga profesional dan lulusan baru yang ingin belajar, berkembang, serta berkontribusi dalam memberikan pelayanan kesehatan yang aman dan berkualitas."
+    },
+
+    "vacancies": {
+      "eyebrow": "Lowongan Tersedia",
+      "title": "Temukan posisi yang sesuai untuk Anda",
+      "description": "Pelajari posisi yang sedang tersedia, persyaratan, manfaat, dan prosedur pengiriman lamaran."
+    },
+
+    "card": {
+      "status": {
+        "open": "Lowongan Dibuka",
+        "closed": "Lowongan Ditutup"
+      },
+
+      "requirements": "Persyaratan",
+      "benefits": "Benefit",
+
+      "emailSubject": "Subjek surel",
+
+      "emailAction": "Kirim Lamaran",
+      "formAction": "Isi Formulir Rekrutmen",
+      "posterAction": "Lihat Poster"
+    },
+
+    "process": {
+      "eyebrow": "Proses Rekrutmen",
+      "title": "Cara mengirimkan lamaran",
+
+      "steps": {
+        "prepare": {
+          "title": "Siapkan dokumen",
+          "description": "Siapkan CV, surat lamaran, dokumen pendidikan, dan dokumen pendukung sesuai persyaratan posisi."
+        },
+
+        "submit": {
+          "title": "Kirim lamaran",
+          "description": "Kirim dokumen melalui surel dengan subjek yang telah ditentukan atau isi formulir rekrutmen yang tersedia."
+        },
+
+        "selection": {
+          "title": "Proses seleksi",
+          "description": "Tim rekrutmen akan menghubungi kandidat yang memenuhi kualifikasi untuk mengikuti proses seleksi berikutnya."
+        }
+      }
+    }
+  },
+
+  "BlogPage": {
+    "metadata": {
+      "title": "Berita dan Informasi Kesehatan",
+      "description": "Temukan berita terbaru, informasi layanan, kegiatan rumah sakit, tips kesehatan, dan edukasi medis dari RSU Royal Prima Medan.",
+      "imageAlt": "Berita dan informasi RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "readMore": "Baca Selengkapnya",
+      "previous": "Berita sebelumnya",
+      "next": "Berita berikutnya",
+      "pagination": "Pilih berita"
+    },
+
+    "categories": {
+      "all": "Semua",
+      "healthTips": "Tips Kesehatan",
+      "hospitalNews": "Berita Rumah Sakit",
+      "medicalEducation": "Edukasi Medis",
+      "community": "Kegiatan"
+    },
+
+    "articles": {
+      "eyebrow": "Berita dan Informasi",
+      "title": "Informasi terbaru dari RSU Royal Prima",
+      "categoryTitle": "Berita kategori {category}",
+      "description": "Ikuti informasi layanan, kegiatan rumah sakit, edukasi medis, serta panduan kesehatan untuk Anda dan keluarga.",
+      "resultCount": "{count} berita ditemukan",
+      "readMore": "Baca berita"
+    },
+
+    "view": {
+      "grid": "Tampilan kartu",
+      "list": "Tampilan daftar"
+    },
+
+    "pagination": {
+      "previous": "Halaman sebelumnya",
+      "next": "Halaman berikutnya",
+      "page": "Halaman"
+    },
+
+    "poster": {
+      "eyebrow": "Pelayanan Kesehatan",
+      "title": "Kesehatan Anda adalah prioritas kami",
+      "description": "Dapatkan informasi layanan, dokter, serta jadwal pelayanan RSU Royal Prima Medan dan buat janji temu sesuai kebutuhan Anda.",
+      "action": "Buat Janji Temu"
+    }
+  },
+
+  "BlogDetailPage": {
+    "breadcrumb": {
+      "label": "Navigasi artikel",
+      "home": "Beranda",
+      "blog": "Berita"
+    },
+
+    "share": {
+      "title": "Bagikan:",
+      "facebook": "Bagikan ke Facebook",
+      "linkedin": "Bagikan ke LinkedIn",
+      "whatsapp": "Bagikan melalui WhatsApp",
+      "copy": "Salin tautan artikel",
+      "copied": "Tautan disalin"
+    },
+
+    "article": {
+      "keyPoints": "Poin penting",
+      "author": "Tentang penulis",
+      "medicalNotice": "Informasi dalam artikel ini bersifat edukasi umum dan tidak menggantikan pemeriksaan, diagnosis, maupun konsultasi langsung dengan dokter atau tenaga kesehatan."
+    },
+
+    "sidebar": {
+      "categories": "Kategori Berita",
+      "popular": "Berita Terbaru",
+
+      "appointment": {
+        "eyebrow": "Butuh Informasi Medis?",
+        "title": "Konsultasikan kebutuhan kesehatan Anda",
+        "description": "Temukan dokter dan layanan RSU Royal Prima Medan sesuai kebutuhan Anda dan keluarga.",
+        "action": "Buat Janji Temu"
+      }
+    },
+
+    "related": {
+      "eyebrow": "Artikel Lainnya",
+      "title": "Informasi yang mungkin Anda butuhkan",
+      "description": "Baca informasi kesehatan, pelayanan rumah sakit, dan kegiatan terbaru dari RSU Royal Prima Medan."
+    }
+  },
+
+  "TimetablePage": {
+    "metadata": {
+      "title": "Jadwal Dokter",
+      "description": "Lihat jadwal praktik dokter dan layanan poliklinik RSU Royal Prima Medan.",
+      "imageAlt": "Jadwal dokter RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Jadwal Dokter",
+      "title": "Rencanakan kunjungan Anda dengan lebih mudah",
+      "description": "Temukan jadwal praktik dokter berdasarkan hari dan departemen sebelum melakukan kunjungan ke RSU Royal Prima Medan.",
+      "primaryAction": "Lihat Jadwal",
+      "imageAlt": "Dokter RSU Royal Prima Medan",
+      "imageBadge": "Informasi Jadwal",
+      "imageBadgeValue": "Jadwal dapat berubah mengikuti kondisi pelayanan"
+    },
+
+    "days": {
+      "monday": "Senin",
+      "tuesday": "Selasa",
+      "wednesday": "Rabu",
+      "thursday": "Kamis",
+      "friday": "Jumat",
+      "saturday": "Sabtu"
+    },
+
+    "departments": {
+      "all": "Semua Departemen",
+      "pediatrics": "Klinik Anak",
+      "obstetricsGynecology": "Kebidanan dan Kandungan",
+      "cardiology": "Klinik Jantung",
+      "pulmonology": "Klinik Paru",
+      "psychiatry": "Klinik Psikiatri",
+      "neurology": "Klinik Saraf"
+    },
+
+    "schedule": {
+      "eyebrow": "Jadwal Pelayanan",
+      "title": "Jadwal praktik dokter minggu ini",
+      "filteredTitle": "Jadwal {department}",
+      "description": "Pilih departemen untuk melihat jadwal dokter dan waktu pelayanan yang sesuai dengan kebutuhan Anda.",
+      "resultCount": "{count} jadwal ditemukan",
+      "room": "Ruangan",
+      "doctors": "Dokter",
+      "emptyTitle": "Jadwal belum tersedia",
+      "emptyDescription": "Belum tersedia jadwal untuk departemen yang dipilih. Silakan pilih departemen lainnya."
+    },
+
+    "notice": {
+      "title": "Konfirmasi jadwal sebelum berkunjung",
+      "description": "Jadwal dokter dapat berubah sewaktu-waktu karena kondisi pelayanan, tindakan medis, atau kebutuhan rumah sakit. Hubungi Contact Center untuk memastikan jadwal terbaru."
+    },
+
+    "poster": {
+      "eyebrow": "Pelayanan Pasien",
+      "title": "Sudah menemukan jadwal dokter yang sesuai?",
+      "description": "Lanjutkan dengan membuat janji temu atau hubungi Contact Center RSU Royal Prima Medan untuk mendapatkan bantuan informasi.",
+      "imageAlt": "Pelayanan dokter RSU Royal Prima Medan",
+      "appointmentAction": "Buat Janji Temu",
+      "phoneAction": "Hubungi Contact Center"
+    }
+  },
+
+  "HomeHeroSlider": {
+    "regionLabel": "Informasi utama RSU Royal Prima Medan",
+
+    "previousSlide": "Tampilkan banner sebelumnya",
+    "nextSlide": "Tampilkan banner berikutnya",
+    "firstSlide": "Ini adalah banner pertama",
+    "lastSlide": "Ini adalah banner terakhir",
+
+    "goToSlide": "Tampilkan banner ke-{number}",
+
+    "play": "Putar banner otomatis",
+    "pause": "Jeda banner otomatis",
+
+    "slides": {
+      "healthPackage": {
+        "alt": "Informasi paket kesehatan RSU Royal Prima Medan",
+        "actionLabel": "Lihat informasi dan buat janji temu"
+      },
+
+      "healthService": {
+        "alt": "Informasi pelayanan kesehatan RSU Royal Prima Medan",
+        "actionLabel": "Cari dokter RSU Royal Prima Medan"
+      }
+    }
+  },
+
+  "HomeHeroQuickInfo": {
+    "regionLabel": "Informasi cepat RSU Royal Prima Medan",
+
+    "items": {
+      "hotline": {
+        "title": "Contact Center",
+        "value": "(061) 888 13182",
+        "description": "Hubungi kami untuk informasi layanan dan jadwal dokter."
+      },
+
+      "emergency": {
+        "title": "Layanan Darurat",
+        "value": "Siaga 24 Jam",
+        "description": "Instalasi Gawat Darurat tersedia untuk kondisi kegawatdaruratan."
+      },
+
+      "location": {
+        "title": "Lokasi Rumah Sakit",
+        "value": "Medan Petisah",
+        "description": "Jl. Ayahanda No. 68A, Kota Medan, Sumatera Utara."
+      }
+    },
+
+    "appointmentEyebrow": "Pelayanan Pasien",
+    "appointmentButton": "Buat Janji Temu",
+    "appointmentDescription": "Daftar secara online"
+  },
+
+  "HomeLatestBlog": {
+    "eyebrow": "Berita dan Informasi",
+    "title": "Informasi kesehatan terbaru untuk Anda dan keluarga",
+    "description": "Temukan informasi layanan rumah sakit, kegiatan, edukasi medis, serta panduan kesehatan terbaru dari RSU Royal Prima Medan.",
+    "readMore": "Baca Selengkapnya",
+    "viewAll": "Lihat Semua Berita"
+  },
+
+  "HomePartners": {
+    "eyebrow": "Kolaborasi",
+    "title": "Mitra & Rekanan Kami",
+    "description": "Bersama mitra dan rekanan terpercaya, kami berkomitmen menghadirkan layanan kesehatan yang lebih mudah, aman, dan terintegrasi.",
+    "ariaLabel": "Daftar mitra dan rekanan RSU Royal Prima Medan"
+  },
+
+  "HomeTestimonials": {
+    "eyebrow": "Pengalaman Pasien",
+    "title": "Cerita kepercayaan dari pasien dan keluarga",
+    "description": "Setiap pengalaman menjadi motivasi bagi kami untuk terus memberikan pelayanan kesehatan yang profesional, ramah, dan berorientasi pada kebutuhan pasien.",
+
+    "highlight": {
+      "eyebrow": "Pelayanan dengan Hati",
+      "value": "Kenyamanan pasien adalah prioritas kami"
+    },
+
+    "slider": {
+      "previousSlide": "Tampilkan testimoni sebelumnya",
+      "nextSlide": "Tampilkan testimoni berikutnya",
+      "firstSlide": "Ini adalah testimoni pertama",
+      "lastSlide": "Ini adalah testimoni terakhir",
+      "slideLabel": "Testimoni {{index}} dari {{slidesLength}}"
+    },
+
+    "items": {
+      "outpatient": {
+        "quote": "Proses pendaftaran dan pemeriksaan berjalan dengan baik. Petugas memberikan arahan yang jelas sehingga kami tidak kesulitan mengikuti alur pelayanan.",
+        "name": "Rina S.",
+        "role": "Pasien Rawat Jalan",
+        "service": "Pelayanan Poliklinik"
+      },
+
+      "emergency": {
+        "quote": "Tim IGD memberikan respons yang cepat dan membantu keluarga kami memahami setiap tindakan yang sedang dilakukan kepada pasien.",
+        "name": "Andi P.",
+        "role": "Keluarga Pasien",
+        "service": "Instalasi Gawat Darurat"
+      },
+
+      "maternity": {
+        "quote": "Dokter dan perawat sangat membantu selama proses persalinan. Kami merasa didampingi dan mendapatkan informasi yang cukup selama perawatan.",
+        "name": "Dewi S.",
+        "role": "Pasien Kebidanan",
+        "service": "Kebidanan dan Kandungan"
+      },
+
+      "childCare": {
+        "quote": "Dokternya ramah dan sabar ketika memeriksa anak kami. Penjelasan yang diberikan juga mudah dipahami oleh orang tua.",
+        "name": "Nadia A.",
+        "role": "Orang Tua Pasien",
+        "service": "Klinik Anak"
+      },
+
+      "medicalCheckup": {
+        "quote": "Pemeriksaan kesehatan dilakukan dengan teratur dan hasilnya dijelaskan secara rinci. Pelayanannya membuat kami merasa lebih tenang.",
+        "name": "Budi T.",
+        "role": "Peserta Pemeriksaan Kesehatan",
+        "service": "Medical Check-Up"
+      },
+
+      "inpatient": {
+        "quote": "Selama menjalani rawat inap, perawat rutin memantau kondisi pasien dan selalu membantu ketika keluarga membutuhkan informasi.",
+        "name": "Maya S.",
+        "role": "Keluarga Pasien",
+        "service": "Pelayanan Rawat Inap"
+      }
+    }
+  },
+
+  "HomeDepartments": {
+    "eyebrow": "Departemen dan Pelayanan",
+    "title": "Pelayanan kesehatan sesuai kebutuhan Anda",
+    "description": "RSU Royal Prima Medan menghadirkan berbagai departemen dan instalasi yang didukung oleh tenaga medis profesional serta fasilitas pelayanan kesehatan yang terintegrasi.",
+
+    "departmentAction": "Lihat Informasi",
+    "viewAll": "Lihat Semua Departemen",
+
+    "notice": "Ketersediaan layanan, jadwal dokter, dan waktu pelayanan dapat berubah mengikuti kondisi operasional rumah sakit.",
+    "contactAction": "Hubungi Contact Center",
+
+    "items": {
+      "emergency": {
+        "title": "Instalasi Gawat Darurat",
+        "description": "Pelayanan kegawatdaruratan dengan dukungan tenaga medis dan fasilitas yang siap membantu pasien dalam kondisi darurat.",
+        "schedule": "Siaga 24 Jam"
+      },
+
+      "outpatient": {
+        "title": "Instalasi Rawat Jalan",
+        "description": "Pelayanan konsultasi, pemeriksaan, dan perawatan pasien melalui berbagai klinik dokter umum dan spesialis."
+      },
+
+      "inpatient": {
+        "title": "Instalasi Rawat Inap",
+        "description": "Pelayanan perawatan pasien dengan pemantauan tenaga medis serta dukungan fasilitas rawat inap yang nyaman."
+      },
+
+      "supporting": {
+        "title": "Pelayanan Penunjang",
+        "description": "Mencakup layanan Radiologi, Laboratorium, dan Rehabilitasi Medik untuk mendukung pemeriksaan dan proses perawatan."
+      },
+
+      "surgery": {
+        "title": "Bedah Sentral",
+        "description": "Pelayanan tindakan operasi yang didukung oleh tim medis, ruang operasi, dan fasilitas penunjang yang terintegrasi."
+      }
+    }
+  },
+
+  "DepartmentsPage": {
+    "metadata": {
+      "title": "Departemen dan Instalasi",
+      "description": "Temukan informasi departemen, instalasi, dan pelayanan kesehatan RSU Royal Prima Medan.",
+      "imageAlt": "Departemen dan pelayanan RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Departemen dan Instalasi",
+      "title": "Pelayanan kesehatan terintegrasi untuk setiap kebutuhan",
+      "description": "RSU Royal Prima Medan menghadirkan berbagai instalasi dan pelayanan yang didukung oleh tenaga medis profesional serta fasilitas kesehatan yang terintegrasi.",
+      "imageAlt": "Tenaga medis RSU Royal Prima Medan",
+      "primaryAction": "Lihat Departemen",
+      "badgeEyebrow": "Pelayanan Darurat",
+      "badgeValue": "Instalasi Gawat Darurat siaga 24 jam"
+    },
+
+    "overview": {
+      "departments": {
+        "value": "5",
+        "label": "Instalasi dan departemen utama"
+      },
+
+      "emergency": {
+        "value": "24 Jam",
+        "label": "Pelayanan Instalasi Gawat Darurat"
+      },
+
+      "integrated": {
+        "value": "Terintegrasi",
+        "label": "Pelayanan medis dan penunjang"
+      }
+    },
+
+    "directory": {
+      "eyebrow": "Layanan Rumah Sakit",
+      "title": "Temukan pelayanan yang sesuai dengan kebutuhan Anda",
+      "description": "Setiap instalasi bekerja secara terintegrasi untuk mendukung proses pemeriksaan, perawatan, tindakan medis, dan pemulihan pasien.",
+      "infoEyebrow": "Informasi Pelayanan",
+      "infoValue": "Jadwal dapat berubah mengikuti kondisi operasional",
+      "notice": "Ketersediaan pelayanan, jadwal dokter, dan waktu operasional dapat berubah. Hubungi Contact Center sebelum melakukan kunjungan."
+    },
+
+    "items": {
+      "emergency": {
+        "eyebrow": "Pelayanan Darurat",
+        "title": "Instalasi Gawat Darurat",
+        "description": "Pelayanan kegawatdaruratan yang didukung oleh tenaga medis dan fasilitas untuk membantu pasien yang membutuhkan penanganan segera.",
+        "schedule": "Siaga 24 Jam",
+        "services": [
+          "Pemeriksaan dan triase pasien",
+          "Penanganan kondisi kegawatdaruratan",
+          "Observasi dan stabilisasi pasien",
+          "Koordinasi pelayanan lanjutan"
+        ],
+        "action": "Hubungi IGD"
+      },
+
+      "outpatient": {
+        "eyebrow": "Pelayanan Pasien",
+        "title": "Instalasi Rawat Jalan",
+        "description": "Pelayanan konsultasi, pemeriksaan, diagnosis, dan tindak lanjut melalui klinik dokter umum dan spesialis.",
+        "schedule": "Sesuai Jadwal Dokter",
+        "services": [
+          "Konsultasi dokter umum dan spesialis",
+          "Pemeriksaan pasien rawat jalan",
+          "Kontrol dan tindak lanjut pengobatan"
+        ],
+        "action": "Lihat Jadwal Dokter"
+      },
+
+      "inpatient": {
+        "eyebrow": "Pelayanan Perawatan",
+        "title": "Instalasi Rawat Inap",
+        "description": "Pelayanan perawatan pasien dengan pemantauan tenaga medis dan fasilitas rawat inap sesuai kebutuhan kondisi pasien.",
+        "schedule": "Pelayanan 24 Jam",
+        "services": [
+          "Pemantauan kondisi pasien",
+          "Pelayanan keperawatan",
+          "Koordinasi pemeriksaan dan pengobatan"
+        ],
+        "action": "Informasi Rawat Inap"
+      },
+
+      "supporting": {
+        "eyebrow": "Pelayanan Penunjang",
+        "title": "Penunjang Medis",
+        "description": "Pelayanan penunjang untuk membantu proses diagnosis, pemeriksaan, pengobatan, dan pemulihan pasien.",
+        "schedule": "Sesuai Jenis Pelayanan",
+        "services": ["Radiologi", "Laboratorium", "Rehabilitasi Medik"],
+        "action": "Lihat Informasi"
+      },
+
+      "centralSurgery": {
+        "eyebrow": "Pelayanan Tindakan",
+        "title": "Bedah Sentral",
+        "description": "Pelayanan tindakan operasi yang didukung oleh tim medis, ruang operasi, dan fasilitas penunjang yang terintegrasi.",
+        "schedule": "Sesuai Jadwal Tindakan",
+        "services": [
+          "Persiapan tindakan operasi",
+          "Pelayanan ruang operasi",
+          "Pemantauan sebelum dan setelah tindakan"
+        ],
+        "action": "Informasi Bedah Sentral"
+      }
+    },
+
+    "poster": {
+      "eyebrow": "Pelayanan Pasien",
+      "title": "Butuh bantuan menentukan pelayanan yang sesuai?",
+      "description": "Hubungi Contact Center atau buat janji temu untuk memperoleh informasi mengenai dokter, jadwal, dan pelayanan RSU Royal Prima Medan.",
+      "imageAlt": "Pelayanan pasien RSU Royal Prima Medan",
+      "appointmentAction": "Buat Janji Temu",
+      "timetableAction": "Lihat Jadwal Dokter"
     }
   }
 }
