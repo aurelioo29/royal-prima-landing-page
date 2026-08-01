@@ -1,6 +1,6 @@
 import type { DepartmentItem } from "../types/departments.types";
 
-export const HOME_DEPARTMENTS = [
+export const HOME_DEPARTMENTS: readonly DepartmentItem[] = [
   {
     id: "emergency",
 
@@ -62,4 +62,4 @@ export const HOME_DEPARTMENTS = [
 
     accent: "gold",
   },
-] as const satisfies readonly DepartmentItem[];
+];
