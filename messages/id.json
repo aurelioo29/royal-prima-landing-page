@@ -892,5 +892,162 @@
       "experiences": "Pengalaman",
       "awards": "Penghargaan & Pencapaian"
     }
+  },
+
+  "PrivacyPolicyPage": {
+    "metadata": {
+      "title": "Kebijakan Privasi",
+      "description": "Kebijakan Privasi RSU Royal Prima Medan mengenai pengumpulan, penggunaan, penyimpanan, dan perlindungan informasi pengguna website.",
+      "imageAlt": "RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Privasi & Keamanan",
+      "title": "Kebijakan Privasi",
+      "description": "Kami menghargai privasi setiap pengguna website dan berkomitmen untuk menangani informasi pribadi secara bertanggung jawab, transparan, dan sesuai dengan kebutuhan pelayanan."
+    },
+
+    "introduction": "Kebijakan Privasi ini menjelaskan bagaimana RSU Royal Prima Medan mengelola informasi yang diperoleh ketika Anda mengakses dan menggunakan website kami. Dengan menggunakan website ini, Anda dianggap telah membaca dan memahami kebijakan yang dijelaskan pada halaman ini.",
+
+    "lastUpdated": {
+      "label": "Terakhir diperbarui",
+      "value": "Agustus 2026"
+    },
+
+    "sections": {
+      "introduction": {
+        "title": "Tentang Kebijakan Privasi Ini",
+        "description": "RSU Royal Prima Medan berkomitmen menjaga privasi serta keamanan informasi pengguna yang mengakses layanan digital kami.",
+        "paragraphs": [
+          "Kebijakan ini berlaku terhadap informasi yang diperoleh melalui website resmi RSU Royal Prima Medan dan layanan digital yang terhubung secara langsung dengan website.",
+          "Kebijakan ini tidak menggantikan ketentuan khusus yang mungkin berlaku terhadap pelayanan medis, rekam medis, sistem informasi rumah sakit, atau layanan lain yang memiliki kebijakan tersendiri."
+        ],
+        "items": []
+      },
+
+      "dataCollected": {
+        "title": "Informasi yang Dapat Kami Kumpulkan",
+        "description": "Jenis informasi yang dikumpulkan dapat berbeda tergantung fitur dan layanan website yang digunakan.",
+        "paragraphs": [],
+        "items": [
+          "Informasi identitas seperti nama apabila Anda mengisi formulir atau melakukan permintaan layanan.",
+          "Informasi kontak seperti nomor telepon dan alamat email.",
+          "Informasi yang Anda sampaikan melalui formulir kontak, permintaan janji temu, kritik, saran, atau komunikasi lainnya.",
+          "Informasi teknis seperti jenis perangkat, browser, alamat IP, serta aktivitas penggunaan website untuk kebutuhan keamanan dan analisis teknis.",
+          "Informasi lain yang secara sukarela Anda berikan melalui fitur yang tersedia pada website."
+        ]
+      },
+
+      "dataUsage": {
+        "title": "Penggunaan Informasi",
+        "description": "Informasi yang diperoleh digunakan untuk mendukung pelayanan serta pengelolaan website.",
+        "paragraphs": [],
+        "items": [
+          "Memproses dan menindaklanjuti permintaan informasi atau pelayanan.",
+          "Membantu proses pembuatan atau koordinasi janji temu.",
+          "Menjawab pertanyaan, kritik, saran, dan komunikasi pengguna.",
+          "Meningkatkan kualitas, keamanan, fungsi, serta pengalaman penggunaan website.",
+          "Melakukan analisis penggunaan website secara agregat.",
+          "Memenuhi kewajiban hukum atau ketentuan yang berlaku apabila diperlukan."
+        ]
+      },
+
+      "cookies": {
+        "title": "Cookies dan Teknologi Serupa",
+        "description": "Website dapat menggunakan cookies atau teknologi serupa untuk membantu fungsi website dan memahami pola penggunaan.",
+        "paragraphs": [
+          "Cookies merupakan file kecil yang dapat disimpan pada perangkat pengguna. Cookies dapat digunakan untuk mengingat preferensi, mendukung keamanan, meningkatkan performa, atau membantu analisis penggunaan website.",
+          "Pengguna dapat mengatur atau menonaktifkan cookies melalui pengaturan browser. Beberapa fungsi website mungkin bekerja secara berbeda apabila cookies tertentu dinonaktifkan."
+        ],
+        "items": []
+      },
+
+      "dataSharing": {
+        "title": "Pembagian dan Pengungkapan Informasi",
+        "description": "Kami tidak menjual informasi pribadi pengguna kepada pihak lain.",
+        "paragraphs": [],
+        "items": [
+          "Informasi dapat diproses oleh penyedia layanan teknologi yang membantu pengoperasian website dengan pembatasan akses yang sesuai.",
+          "Informasi dapat diberikan apabila diperlukan untuk memenuhi kewajiban hukum, perintah resmi, atau permintaan dari pihak berwenang sesuai ketentuan yang berlaku.",
+          "Informasi dapat digunakan antarunit yang berkepentingan apabila diperlukan untuk menindaklanjuti pelayanan yang diminta oleh pengguna."
+        ]
+      },
+
+      "dataSecurity": {
+        "title": "Keamanan Informasi",
+        "description": "Kami menerapkan langkah teknis dan organisasi yang wajar untuk membantu melindungi informasi dari akses, penggunaan, perubahan, atau pengungkapan yang tidak sah.",
+        "paragraphs": [
+          "Walaupun kami berupaya menjaga keamanan sistem, tidak ada metode penyimpanan maupun transmisi informasi melalui internet yang dapat dijamin sepenuhnya bebas risiko.",
+          "Pengguna juga disarankan menjaga keamanan perangkat dan informasi pribadi ketika menggunakan layanan digital."
+        ],
+        "items": []
+      },
+
+      "dataRetention": {
+        "title": "Penyimpanan Informasi",
+        "description": "Informasi disimpan selama diperlukan untuk memenuhi tujuan pengumpulan, kebutuhan operasional, pelayanan, keamanan, atau kewajiban hukum.",
+        "paragraphs": [
+          "Durasi penyimpanan dapat berbeda berdasarkan jenis informasi, tujuan pemrosesan, dan ketentuan yang berlaku.",
+          "Informasi yang tidak lagi diperlukan dapat dihapus, dianonimkan, atau dikelola sesuai kebijakan internal dan peraturan yang relevan."
+        ],
+        "items": []
+      },
+
+      "userRights": {
+        "title": "Hak Pengguna",
+        "description": "Dalam kondisi dan sepanjang diperbolehkan oleh ketentuan yang berlaku, pengguna dapat mengajukan permintaan terkait informasi pribadinya.",
+        "paragraphs": [],
+        "items": [
+          "Meminta informasi mengenai penggunaan data pribadi.",
+          "Meminta koreksi terhadap informasi yang tidak akurat.",
+          "Meminta penghapusan informasi tertentu apabila tidak lagi diperlukan dan diperbolehkan oleh ketentuan yang berlaku.",
+          "Mengajukan pertanyaan atau keberatan terkait penggunaan informasi pribadi."
+        ]
+      },
+
+      "externalLinks": {
+        "title": "Tautan ke Website Eksternal",
+        "description": "Website RSU Royal Prima Medan dapat memuat tautan menuju website atau layanan milik pihak lain.",
+        "paragraphs": [
+          "Kami tidak mengendalikan dan tidak bertanggung jawab terhadap kebijakan privasi, isi, keamanan, maupun praktik pengelolaan data pada website eksternal.",
+          "Pengguna disarankan membaca kebijakan privasi masing-masing website yang dikunjungi."
+        ],
+        "items": []
+      },
+
+      "children": {
+        "title": "Privasi Anak",
+        "description": "Website ini tidak dimaksudkan untuk meminta anak memberikan informasi pribadi secara mandiri tanpa keterlibatan orang tua atau wali.",
+        "paragraphs": [
+          "Apabila informasi mengenai anak diperlukan dalam proses pelayanan, informasi tersebut sebaiknya disampaikan oleh orang tua, wali, atau pihak yang memiliki kewenangan yang sesuai."
+        ],
+        "items": []
+      },
+
+      "policyChanges": {
+        "title": "Perubahan Kebijakan Privasi",
+        "description": "Kebijakan Privasi dapat diperbarui dari waktu ke waktu untuk menyesuaikan perubahan layanan, teknologi, kebutuhan operasional, atau ketentuan yang berlaku.",
+        "paragraphs": [
+          "Versi terbaru akan ditampilkan pada halaman ini beserta informasi mengenai waktu pembaruan.",
+          "Kami menyarankan pengguna untuk membaca kembali Kebijakan Privasi secara berkala."
+        ],
+        "items": []
+      },
+
+      "contact": {
+        "title": "Hubungi Kami",
+        "description": "Apabila Anda memiliki pertanyaan mengenai Kebijakan Privasi atau pengelolaan informasi melalui website RSU Royal Prima Medan, silakan menghubungi kami.",
+        "paragraphs": [],
+        "items": [
+          "RSU Royal Prima Medan",
+          "Email: contact@royalprima.com",
+          "Telepon: (061) 888 13182"
+        ]
+      }
+    },
+
+    "contact": {
+      "description": "Punya pertanyaan mengenai privasi atau penggunaan informasi pada website kami? Hubungi RSU Royal Prima Medan."
+    }
   }
 }
