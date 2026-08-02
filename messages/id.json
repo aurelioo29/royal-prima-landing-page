@@ -809,5 +809,88 @@
       "appointmentAction": "Buat Janji Temu",
       "timetableAction": "Lihat Jadwal Dokter"
     }
+  },
+
+  "DoctorsPage": {
+    "metadata": {
+      "title": "Cari Dokter",
+      "description": "Temukan dokter dan informasi pelayanan berdasarkan poli di RSU Royal Prima Medan.",
+      "imageAlt": "Dokter RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Dokter Kami",
+      "title": "Temukan dokter yang sesuai dengan kebutuhan Anda",
+      "description": "Cari dokter berdasarkan poli dan lihat profil dokter untuk membantu merencanakan kunjungan serta pelayanan kesehatan yang Anda butuhkan.",
+      "imageAlt": "Dokter RSU Royal Prima Medan",
+      "primaryAction": "Cari Dokter",
+      "secondaryAction": "Lihat Jadwal Dokter",
+      "badgeEyebrow": "Pelayanan Medis",
+      "badgeValue": "Dokter umum dan spesialis"
+    },
+
+    "directory": {
+      "eyebrow": "Direktori Dokter",
+      "title": "Temukan dokter kami",
+      "description": "Pilih poli untuk menemukan dokter sesuai dengan pelayanan kesehatan yang Anda butuhkan.",
+      "showing": "Menampilkan {count} dokter"
+    },
+
+    "controls": {
+      "clinic": "Pilih Poli",
+      "card": "Tampilan kartu",
+      "list": "Tampilan daftar"
+    },
+
+    "clinics": {
+      "all": "Semua Poli",
+      "pediatrics": "Klinik Anak",
+      "pediatricHematologyOncology": "Klinik Hematologi Onkologi Anak",
+      "internalMedicine": "Klinik Penyakit Dalam",
+      "endocrineMetabolicDiabetes": "Klinik Endokrin, Metabolik, dan Diabetes",
+      "kidneyHypertension": "Klinik Ginjal dan Hipertensi",
+      "gastroenterohepatology": "Klinik Gastroenterohepatologi",
+      "rheumatology": "Klinik Reumatologi",
+      "medicalHematologyOncology": "Klinik Hematologi Onkologi Medik",
+      "obstetricsGynecology": "Klinik Kebidanan dan Kandungan",
+      "gynecologicOncology": "Klinik Onkologi Ginekologi"
+    },
+
+    "card": {
+      "profile": "Lihat Profil"
+    },
+
+    "pagination": {
+      "previous": "Halaman sebelumnya",
+      "next": "Halaman berikutnya"
+    },
+
+    "empty": {
+      "title": "Dokter belum tersedia",
+      "description": "Belum ada dokter yang tersedia pada poli yang dipilih. Silakan pilih poli lainnya."
+    },
+
+    "poster": {
+      "eyebrow": "Pelayanan Pasien",
+      "title": "Sudah menemukan dokter yang sesuai?",
+      "description": "Lihat jadwal praktik atau buat janji temu untuk merencanakan kunjungan Anda ke RSU Royal Prima Medan.",
+      "imageAlt": "Pelayanan dokter RSU Royal Prima Medan",
+      "appointmentAction": "Buat Janji Temu",
+      "timetableAction": "Lihat Jadwal Dokter"
+    },
+
+    "breadcrumb": {
+      "home": "Beranda",
+      "doctors": "Cari Dokter"
+    },
+
+    "detail": {
+      "appointment": "Buat Janji Temu",
+      "backToDoctors": "Kembali ke Daftar Dokter",
+      "schedules": "Jadwal Praktik",
+      "education": "Pendidikan",
+      "experiences": "Pengalaman",
+      "awards": "Penghargaan & Pencapaian"
+    }
   }
 }
