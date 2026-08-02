@@ -1049,5 +1049,195 @@
     "contact": {
       "description": "Punya pertanyaan mengenai privasi atau penggunaan informasi pada website kami? Hubungi RSU Royal Prima Medan."
     }
+  },
+
+  "TermsConditionsPage": {
+    "metadata": {
+      "title": "Syarat dan Ketentuan",
+      "description": "Syarat dan Ketentuan penggunaan website dan layanan digital RSU Royal Prima Medan.",
+      "imageAlt": "RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Ketentuan Penggunaan",
+      "title": "Syarat dan Ketentuan",
+      "description": "Ketentuan berikut mengatur penggunaan website dan layanan digital RSU Royal Prima Medan. Harap membaca ketentuan ini sebelum menggunakan fitur yang tersedia."
+    },
+
+    "introduction": "Dengan mengakses atau menggunakan website RSU Royal Prima Medan, Anda dianggap telah membaca, memahami, dan menyetujui Syarat dan Ketentuan yang dijelaskan pada halaman ini. Apabila Anda tidak menyetujui ketentuan tertentu, Anda disarankan untuk tidak menggunakan fitur atau layanan terkait.",
+
+    "lastUpdated": {
+      "label": "Terakhir diperbarui",
+      "value": "Agustus 2026"
+    },
+
+    "sections": {
+      "acceptance": {
+        "title": "Penerimaan Syarat dan Ketentuan",
+        "description": "Penggunaan website merupakan bentuk persetujuan terhadap ketentuan penggunaan yang berlaku.",
+        "paragraphs": [
+          "Syarat dan Ketentuan ini berlaku terhadap akses dan penggunaan website resmi RSU Royal Prima Medan serta fitur digital yang tersedia di dalamnya.",
+          "Ketentuan tambahan dapat berlaku terhadap layanan tertentu seperti pendaftaran, janji temu, sistem pasien, atau layanan digital lainnya."
+        ],
+        "items": []
+      },
+
+      "websitePurpose": {
+        "title": "Tujuan Website",
+        "description": "Website disediakan sebagai sarana informasi dan akses awal terhadap berbagai layanan RSU Royal Prima Medan.",
+        "paragraphs": [],
+        "items": [
+          "Memberikan informasi mengenai rumah sakit, fasilitas, departemen, dokter, dan pelayanan.",
+          "Memberikan informasi jadwal dokter dan layanan yang tersedia.",
+          "Menyediakan sarana untuk menghubungi rumah sakit.",
+          "Mendukung proses permintaan janji temu atau pelayanan lain apabila fitur tersebut tersedia.",
+          "Menyediakan informasi kesehatan dan berita yang bersifat edukatif."
+        ]
+      },
+
+      "medicalInformation": {
+        "title": "Informasi Kesehatan dan Medis",
+        "description": "Informasi kesehatan pada website ditujukan untuk memberikan informasi umum dan tidak menggantikan konsultasi medis secara langsung.",
+        "paragraphs": [
+          "Informasi mengenai penyakit, gejala, pemeriksaan, tindakan, obat, atau layanan kesehatan pada website tidak boleh digunakan sebagai satu-satunya dasar untuk melakukan diagnosis atau menentukan pengobatan.",
+          "Keputusan medis harus dibuat melalui konsultasi dan pemeriksaan oleh tenaga kesehatan yang kompeten berdasarkan kondisi masing-masing pasien."
+        ],
+        "items": [
+          "Jangan menunda pemeriksaan medis hanya berdasarkan informasi yang tersedia pada website.",
+          "Dalam kondisi kegawatdaruratan, segera mencari pertolongan medis melalui fasilitas pelayanan kesehatan yang sesuai.",
+          "Hasil diagnosis dan rencana terapi dapat berbeda pada setiap pasien."
+        ]
+      },
+
+      "appointments": {
+        "title": "Janji Temu dan Jadwal Dokter",
+        "description": "Informasi jadwal dan permintaan janji temu dapat berubah mengikuti kondisi operasional rumah sakit.",
+        "paragraphs": [
+          "Pengiriman permintaan janji temu melalui website tidak selalu berarti jadwal telah dikonfirmasi. Konfirmasi dapat memerlukan komunikasi lebih lanjut dari pihak rumah sakit.",
+          "Dokter, jadwal praktik, lokasi pelayanan, dan waktu pelayanan dapat mengalami perubahan karena kebutuhan pelayanan, kondisi medis, keadaan darurat, atau alasan operasional lainnya."
+        ],
+        "items": [
+          "Pengguna bertanggung jawab memberikan data kontak yang benar ketika melakukan permintaan janji temu.",
+          "Pengguna disarankan melakukan konfirmasi sebelum datang ke rumah sakit.",
+          "Keterlambatan atau perubahan jadwal dapat terjadi dalam kondisi tertentu."
+        ]
+      },
+
+      "userResponsibilities": {
+        "title": "Tanggung Jawab Pengguna",
+        "description": "Pengguna diharapkan menggunakan website secara benar dan memberikan informasi yang akurat.",
+        "paragraphs": [],
+        "items": [
+          "Memberikan informasi yang benar apabila menggunakan formulir atau layanan interaktif.",
+          "Tidak menggunakan identitas orang lain tanpa hak atau izin yang sesuai.",
+          "Menjaga keamanan perangkat dan informasi pribadi yang digunakan untuk mengakses layanan digital.",
+          "Menggunakan website hanya untuk tujuan yang sah.",
+          "Menghormati hak, keamanan, dan privasi pengguna lainnya."
+        ]
+      },
+
+      "prohibitedUse": {
+        "title": "Penggunaan yang Dilarang",
+        "description": "Website tidak boleh digunakan untuk aktivitas yang melanggar hukum atau mengganggu keamanan layanan.",
+        "paragraphs": [],
+        "items": [
+          "Mencoba memperoleh akses tanpa izin ke sistem, server, akun, atau data.",
+          "Mengirimkan malware, virus, kode berbahaya, atau aktivitas yang dapat mengganggu layanan.",
+          "Melakukan scraping, pengumpulan data otomatis, atau penggunaan sistem secara berlebihan tanpa izin.",
+          "Menggunakan website untuk menyebarkan informasi palsu, menyesatkan, melanggar hukum, atau merugikan pihak lain.",
+          "Menyalin atau menggunakan konten website secara tidak sah."
+        ]
+      },
+
+      "intellectualProperty": {
+        "title": "Hak Kekayaan Intelektual",
+        "description": "Konten pada website dilindungi oleh hak kekayaan intelektual sesuai ketentuan yang berlaku.",
+        "paragraphs": [
+          "Logo, nama, desain, teks, ilustrasi, foto, video, materi publikasi, dan elemen lain pada website merupakan milik RSU Royal Prima Medan atau digunakan berdasarkan hak dan izin yang sesuai.",
+          "Pengguna tidak diperkenankan memperbanyak, mendistribusikan, memodifikasi, mempublikasikan ulang, atau mengeksploitasi konten untuk tujuan komersial tanpa izin."
+        ],
+        "items": []
+      },
+
+      "thirdPartyLinks": {
+        "title": "Tautan dan Layanan Pihak Ketiga",
+        "description": "Website dapat menyediakan tautan menuju website, platform, atau layanan yang dikelola oleh pihak lain.",
+        "paragraphs": [
+          "Tautan tersebut disediakan untuk memberikan kemudahan kepada pengguna dan tidak selalu berarti RSU Royal Prima Medan mendukung seluruh isi atau layanan pihak tersebut.",
+          "RSU Royal Prima Medan tidak memiliki kendali langsung terhadap keamanan, ketersediaan, kebijakan, maupun konten pada website pihak ketiga."
+        ],
+        "items": []
+      },
+
+      "availability": {
+        "title": "Ketersediaan Website",
+        "description": "Kami berupaya menjaga website agar dapat digunakan dengan baik, namun ketersediaan layanan tidak dapat dijamin setiap saat.",
+        "paragraphs": [],
+        "items": [
+          "Website dapat mengalami pemeliharaan terjadwal maupun tidak terjadwal.",
+          "Layanan dapat terganggu akibat masalah teknis, jaringan, infrastruktur, keamanan, atau keadaan di luar kendali rumah sakit.",
+          "Fitur tertentu dapat diubah, dihentikan sementara, atau dihentikan secara permanen apabila diperlukan."
+        ]
+      },
+
+      "limitation": {
+        "title": "Batasan Tanggung Jawab",
+        "description": "Penggunaan website dilakukan dengan mempertimbangkan bahwa informasi dan layanan digital dapat memiliki keterbatasan.",
+        "paragraphs": [
+          "Kami berupaya menyediakan informasi yang akurat dan relevan, namun tidak menjamin bahwa seluruh informasi selalu lengkap, bebas kesalahan, atau selalu diperbarui secara real-time.",
+          "RSU Royal Prima Medan tidak bertanggung jawab atas keputusan medis yang dibuat hanya berdasarkan informasi umum yang terdapat pada website tanpa konsultasi tenaga kesehatan."
+        ],
+        "items": [
+          "Gangguan teknis atau ketidaktersediaan website.",
+          "Perubahan jadwal atau ketersediaan dokter dan pelayanan.",
+          "Kerugian yang timbul akibat penggunaan website yang tidak sesuai dengan ketentuan.",
+          "Isi atau tindakan yang berasal dari website dan layanan pihak ketiga."
+        ]
+      },
+
+      "privacy": {
+        "title": "Privasi dan Informasi Pengguna",
+        "description": "Pengelolaan informasi pribadi yang diperoleh melalui website dijelaskan lebih lanjut pada Kebijakan Privasi RSU Royal Prima Medan.",
+        "paragraphs": [
+          "Dengan menggunakan fitur yang meminta informasi pribadi, pengguna memahami bahwa informasi tersebut dapat digunakan untuk memproses permintaan atau mendukung pelayanan yang diminta.",
+          "Pengguna disarankan membaca Kebijakan Privasi sebelum memberikan informasi pribadi melalui website."
+        ],
+        "items": []
+      },
+
+      "changes": {
+        "title": "Perubahan Syarat dan Ketentuan",
+        "description": "Syarat dan Ketentuan dapat diperbarui apabila terdapat perubahan layanan, teknologi, kebijakan, atau ketentuan yang berlaku.",
+        "paragraphs": [
+          "Versi terbaru akan dipublikasikan pada halaman ini beserta waktu pembaruannya.",
+          "Penggunaan website setelah perubahan diberlakukan dianggap sebagai penerimaan terhadap versi Syarat dan Ketentuan yang terbaru."
+        ],
+        "items": []
+      },
+
+      "governing": {
+        "title": "Ketentuan yang Berlaku",
+        "description": "Penggunaan website dan Syarat dan Ketentuan ini tunduk pada ketentuan hukum yang berlaku di Republik Indonesia.",
+        "paragraphs": [
+          "Apabila terdapat bagian dari ketentuan ini yang dinyatakan tidak berlaku atau tidak dapat dilaksanakan, bagian lainnya tetap berlaku sepanjang diperbolehkan oleh ketentuan yang berlaku."
+        ],
+        "items": []
+      },
+
+      "contact": {
+        "title": "Hubungi Kami",
+        "description": "Apabila Anda memiliki pertanyaan mengenai penggunaan website atau Syarat dan Ketentuan ini, silakan menghubungi RSU Royal Prima Medan.",
+        "paragraphs": [],
+        "items": [
+          "RSU Royal Prima Medan",
+          "Email: contact@royalprima.com",
+          "Telepon: (061) 888 13182"
+        ]
+      }
+    },
+
+    "contact": {
+      "description": "Memiliki pertanyaan mengenai Syarat dan Ketentuan atau penggunaan website RSU Royal Prima Medan? Silakan hubungi kami."
+    }
   }
 }
