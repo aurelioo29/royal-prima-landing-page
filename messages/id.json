@@ -1351,5 +1351,247 @@
         "facility04": "Aktivitas RSU Royal Prima Medan"
       }
     }
+  },
+
+  "EmergencyDepartmentPage": {
+    "metadata": {
+      "title": "Instalasi Gawat Darurat",
+      "description": "Pelayanan Instalasi Gawat Darurat RSU Royal Prima Medan tersedia 24 jam untuk memberikan penilaian dan penanganan awal terhadap pasien dengan kondisi medis darurat.",
+      "imageAlt": "Instalasi Gawat Darurat RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Pelayanan 24 Jam",
+      "title": "Instalasi Gawat Darurat",
+      "description": "Memberikan pelayanan medis bagi pasien dengan kondisi darurat yang membutuhkan penilaian dan penanganan segera, cepat, serta terkoordinasi selama 24 jam setiap hari.",
+      "imageAlt": "Pelayanan Instalasi Gawat Darurat RSU Royal Prima Medan",
+      "primaryAction": "Informasi IGD",
+      "secondaryAction": "Lihat Lokasi",
+      "badgeEyebrow": "Siaga Setiap Hari",
+      "badgeValue": "24 Jam / 7 Hari"
+    },
+
+    "overview": {
+      "eyebrow": "Tentang IGD",
+      "title": "Pelayanan Gawat Darurat yang Siap 24 Jam",
+      "description": "Instalasi Gawat Darurat RSU Royal Prima Medan merupakan layanan pertama bagi pasien yang mengalami kondisi medis darurat dan membutuhkan penilaian serta penanganan segera. Pelayanan dilakukan melalui proses triase untuk menentukan tingkat kegawatan pasien sehingga penanganan dapat diberikan berdasarkan prioritas medis.",
+
+      "stats": {
+        "opening": {
+          "value": "24 Jam",
+          "label": "Pelayanan gawat darurat tersedia setiap hari"
+        },
+
+        "triage": {
+          "value": "Triase",
+          "label": "Penanganan berdasarkan tingkat kegawatan pasien"
+        },
+
+        "integrated": {
+          "value": "Terintegrasi",
+          "label": "Pelayanan dilanjutkan sesuai kebutuhan medis pasien"
+        }
+      }
+    },
+
+    "conditions": {
+      "eyebrow": "Kondisi Darurat",
+      "title": "Kapan Harus ke IGD?",
+      "description": "Beberapa kondisi membutuhkan pemeriksaan serta pertolongan medis segera. Segera mencari pelayanan kegawatdaruratan apabila mengalami kondisi serius atau gejala yang muncul secara tiba-tiba.",
+
+      "note": "Daftar kondisi berikut merupakan contoh umum dan bukan pengganti penilaian medis. Apabila Anda ragu terhadap tingkat kegawatan kondisi pasien, segera hubungi fasilitas kesehatan.",
+
+      "items": {
+        "breathing": {
+          "title": "Kesulitan Bernapas",
+          "description": "Sesak berat, kesulitan bernapas, atau gangguan pernapasan yang muncul secara tiba-tiba."
+        },
+
+        "chestPain": {
+          "title": "Nyeri Dada Berat",
+          "description": "Nyeri dada berat, menekan, atau muncul tiba-tiba terutama apabila disertai gejala lainnya."
+        },
+
+        "unconscious": {
+          "title": "Penurunan Kesadaran",
+          "description": "Pasien sulit dibangunkan, tidak merespons, pingsan, atau mengalami perubahan kesadaran."
+        },
+
+        "bleeding": {
+          "title": "Perdarahan Berat",
+          "description": "Perdarahan yang banyak, berkelanjutan, atau sulit dihentikan."
+        },
+
+        "seizure": {
+          "title": "Kejang",
+          "description": "Kejang berkepanjangan, berulang, atau kejang pertama kali yang membutuhkan evaluasi segera."
+        },
+
+        "accident": {
+          "title": "Cedera Berat",
+          "description": "Cedera akibat kecelakaan, jatuh, benturan berat, atau trauma yang membutuhkan penanganan medis."
+        },
+
+        "stroke": {
+          "title": "Gejala Stroke",
+          "description": "Kelemahan mendadak pada wajah atau anggota tubuh, bicara pelo, atau gangguan neurologis tiba-tiba."
+        },
+
+        "allergy": {
+          "title": "Reaksi Alergi Berat",
+          "description": "Reaksi alergi yang disertai sesak, bengkak, penurunan kesadaran, atau gejala berat lainnya."
+        }
+      }
+    },
+
+    "flow": {
+      "eyebrow": "Alur Pelayanan",
+      "title": "Alur Pelayanan Pasien IGD",
+      "description": "Pasien akan melalui proses pelayanan sesuai kondisi dan tingkat kegawatannya. Prioritas penanganan ditentukan berdasarkan kebutuhan medis.",
+
+      "items": {
+        "arrival": {
+          "title": "Kedatangan Pasien",
+          "description": "Pasien tiba di Instalasi Gawat Darurat dan diarahkan menuju proses penilaian awal."
+        },
+
+        "triage": {
+          "title": "Triase",
+          "description": "Tenaga kesehatan melakukan penilaian awal untuk menentukan tingkat kegawatan dan prioritas penanganan."
+        },
+
+        "doctor": {
+          "title": "Pemeriksaan Dokter",
+          "description": "Dokter melakukan evaluasi terhadap kondisi pasien dan menentukan kebutuhan medis selanjutnya."
+        },
+
+        "treatment": {
+          "title": "Tindakan dan Pemeriksaan Penunjang",
+          "description": "Tindakan medis maupun pemeriksaan penunjang dilakukan sesuai indikasi serta kondisi pasien."
+        },
+
+        "followUp": {
+          "title": "Tindak Lanjut",
+          "description": "Pasien dapat dipulangkan, diobservasi, dirawat inap, mendapatkan tindakan lanjutan, atau dirujuk sesuai kebutuhan medis."
+        }
+      }
+    },
+
+    "facilityGallery": {
+      "eyebrow": "Fasilitas IGD",
+      "title": "Lingkungan Pelayanan Instalasi Gawat Darurat",
+      "description": "Kenali lebih dekat fasilitas dan lingkungan pelayanan Instalasi Gawat Darurat RSU Royal Prima Medan yang mendukung proses pemeriksaan, penanganan, dan pemantauan pasien."
+    },
+
+    "facilities": {
+      "eyebrow": "Dukungan Pelayanan",
+      "title": "Dukungan Pelayanan Gawat Darurat",
+      "description": "Pelayanan IGD didukung oleh berbagai fasilitas dan pelayanan penunjang untuk membantu proses pemeriksaan serta penanganan pasien.",
+
+      "disclaimer": "Informasi fasilitas perlu disesuaikan kembali dengan fasilitas dan pelayanan IGD RSU Royal Prima Medan yang tersedia saat ini.",
+
+      "items": {
+        "triage": {
+          "title": "Area Triase",
+          "description": "Digunakan untuk melakukan penilaian awal dan menentukan prioritas penanganan pasien."
+        },
+
+        "resuscitation": {
+          "title": "Area Resusitasi",
+          "description": "Mendukung tindakan awal pada pasien dengan kondisi kegawatdaruratan yang membutuhkan penanganan segera."
+        },
+
+        "observation": {
+          "title": "Area Observasi",
+          "description": "Digunakan untuk pemantauan kondisi pasien sebelum menentukan pelayanan lanjutan."
+        },
+
+        "laboratory": {
+          "title": "Laboratorium",
+          "description": "Mendukung kebutuhan pemeriksaan diagnostik berdasarkan indikasi medis."
+        },
+
+        "radiology": {
+          "title": "Radiologi",
+          "description": "Mendukung pemeriksaan pencitraan sesuai kebutuhan dan kondisi pasien."
+        },
+
+        "pharmacy": {
+          "title": "Farmasi",
+          "description": "Mendukung kebutuhan obat dan terapi selama proses pelayanan pasien."
+        }
+      }
+    },
+
+    "triage": {
+      "eyebrow": "Sistem Triase",
+      "title": "Penanganan Berdasarkan Tingkat Kegawatan",
+      "description": "IGD menggunakan sistem triase untuk menentukan prioritas pelayanan. Pasien dengan kondisi yang lebih mengancam nyawa atau membutuhkan tindakan segera dapat mendapatkan penanganan lebih dahulu meskipun datang setelah pasien lainnya.",
+
+      "points": [
+        "Prioritas pelayanan ditentukan berdasarkan kondisi medis dan tingkat kegawatan, bukan berdasarkan urutan kedatangan.",
+        "Penilaian dapat dilakukan kembali apabila kondisi pasien mengalami perubahan selama berada di IGD.",
+        "Tim medis menentukan pemeriksaan, tindakan, serta kebutuhan pelayanan lanjutan berdasarkan hasil evaluasi pasien."
+      ]
+    },
+
+    "info": {
+      "eyebrow": "Informasi Pelayanan",
+      "title": "Informasi Instalasi Gawat Darurat",
+      "description": "Informasi berikut dapat digunakan untuk membantu merencanakan akses menuju pelayanan Instalasi Gawat Darurat RSU Royal Prima Medan.",
+
+      "opening": {
+        "label": "Jam Operasional",
+        "value": "24 Jam / 7 Hari"
+      },
+
+      "location": {
+        "label": "Lokasi",
+        "value": "RSU Royal Prima Medan"
+      },
+
+      "phone": {
+        "label": "Telepon",
+        "action": "Hubungi Sekarang"
+      }
+    },
+
+    "poster": {
+      "eyebrow": "Pelayanan Gawat Darurat",
+      "title": "Butuh Pertolongan Medis Segera?",
+      "description": "Instalasi Gawat Darurat RSU Royal Prima Medan siap memberikan pelayanan kegawatdaruratan selama 24 jam untuk pasien yang membutuhkan penanganan medis segera.",
+      "imageAlt": "Tim medis Instalasi Gawat Darurat RSU Royal Prima Medan",
+      "phoneAction": "Hubungi IGD",
+      "locationAction": "Petunjuk Lokasi"
+    },
+
+    "related": {
+      "eyebrow": "Layanan Terkait",
+      "title": "Pelayanan Pendukung Lainnya",
+      "description": "Pelayanan IGD dapat terhubung dengan berbagai unit rumah sakit sesuai kebutuhan pemeriksaan dan kondisi pasien.",
+      "view": "Lihat Layanan",
+
+      "items": {
+        "inpatient": {
+          "title": "Rawat Inap",
+          "description": "Pelayanan lanjutan bagi pasien yang membutuhkan perawatan dan pemantauan lebih lanjut."
+        },
+
+        "radiology": {
+          "title": "Radiologi",
+          "description": "Pelayanan pemeriksaan pencitraan untuk mendukung diagnosis dan evaluasi kondisi pasien."
+        },
+
+        "laboratory": {
+          "title": "Laboratorium",
+          "description": "Pemeriksaan laboratorium untuk mendukung proses diagnosis dan pemantauan pasien."
+        },
+
+        "surgery": {
+          "title": "Bedah Sentral",
+          "description": "Pelayanan tindakan pembedahan sesuai indikasi dan kebutuhan medis pasien."
+        }
+      }
+    }
   }
 }

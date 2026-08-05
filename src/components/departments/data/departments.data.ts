@@ -20,7 +20,7 @@ export const DEPARTMENTS_PAGE_ITEMS = [
 
     icon: "emergency",
 
-    href: "tel:+626188813182",
+    href: "/departments/emergency",
 
     linkType: "anchor",
 
@@ -34,7 +34,7 @@ export const DEPARTMENTS_PAGE_ITEMS = [
 
     icon: "outpatient",
 
-    href: "/timetable",
+    href: "/departments/outpatient",
 
     linkType: "internal",
   },
@@ -46,7 +46,7 @@ export const DEPARTMENTS_PAGE_ITEMS = [
 
     icon: "inpatient",
 
-    href: "/contact",
+    href: "/departments/inpatient",
 
     linkType: "internal",
   },
@@ -58,7 +58,7 @@ export const DEPARTMENTS_PAGE_ITEMS = [
 
     icon: "supporting",
 
-    href: "/contact",
+    href: "/departments/supporting",
 
     linkType: "internal",
   },
