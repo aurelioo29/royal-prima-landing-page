@@ -225,24 +225,24 @@ export default async function AboutPage({ params }: AboutPageProps) {
         {/* =========================
             POSTER
         ========================== */}
-        <Reveal direction="up" distance={30}>
+        {/* <Reveal direction="up" distance={30}>
           <AboutPoster
             image={aboutPageConfig.posterImage}
             imageAlt={t("poster.imageAlt")}
           />
-        </Reveal>
+        </Reveal> */}
 
         {/* =========================
             FACILITIES
         ========================== */}
-        <Reveal direction="up" distance={30}>
+        {/* <Reveal direction="up" distance={30}>
           <AboutFacilities
             eyebrow={t("facilities.eyebrow")}
             title={t("facilities.title")}
             description={t("facilities.description")}
             items={gallery}
           />
-        </Reveal>
+        </Reveal> */}
       </main>
     </>
   );

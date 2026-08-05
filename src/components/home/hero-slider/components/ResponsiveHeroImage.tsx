@@ -51,25 +51,17 @@ export default function ResponsiveHeroImage({
 
   const { props: desktopImageProps } = getImageProps({
     src: image,
-
     alt,
-
     sizes: "(min-width: 768px) 100vw, 1px",
-
-    quality: 90,
-
+    quality: 75,
     ...loadingProps,
   });
 
   const { props: mobileImageProps } = getImageProps({
     src: mobileSource,
-
     alt,
-
     sizes: "(max-width: 767px) 100vw, 1px",
-
-    quality: 90,
-
+    quality: 75,
     ...loadingProps,
   });
 
@@ -83,8 +75,8 @@ export default function ResponsiveHeroImage({
     <div
       className={
         hasDedicatedMobileImage
-          ? "relative aspect-[4/5] w-full overflow-hidden bg-[#EAF8FE] md:aspect-[1600/684]"
-          : "relative aspect-[1600/684] w-full overflow-hidden bg-[#EAF8FE]"
+          ? "relative aspect-[4/5] w-full overflow-hidden bg-[#EAF8FE] md:aspect-[2/1]"
+          : "relative aspect-[2/1] w-full overflow-hidden bg-[#EAF8FE]"
       }
     >
       <picture className="block h-full w-full">
