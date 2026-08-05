@@ -1239,5 +1239,117 @@
     "contact": {
       "description": "Memiliki pertanyaan mengenai Syarat dan Ketentuan atau penggunaan website RSU Royal Prima Medan? Silakan hubungi kami."
     }
+  },
+
+  "AboutPage": {
+    "metadata": {
+      "title": "Tentang Kami",
+      "description": "Mengenal lebih dekat RSU Royal Prima Medan, profil rumah sakit, visi dan misi, penghargaan, tata kelola, fasilitas serta aktivitas pelayanan kesehatan.",
+      "imageAlt": "RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Tentang Kami",
+      "title": "Mengenal RSU Royal Prima Medan",
+      "description": "Berkomitmen memberikan pelayanan kesehatan yang bermutu serta berperan dalam pendidikan, penelitian, dan pengembangan kesehatan bagi masyarakat.",
+      "imageAlt": "RSU Royal Prima Medan",
+      "primaryAction": "Lihat Profil",
+      "secondaryAction": "Hubungi Kami"
+    },
+
+    "profile": {
+      "eyebrow": "Profil Rumah Sakit",
+      "title": "Profil RSU Royal Prima",
+      "description": "Rumah Sakit Royal Prima Medan merupakan salah satu rumah sakit swasta terbesar dan akan menjadi pusat rujukan bagi masyarakat khususnya Kota Medan dan masyarakat Sumatera Utara pada umumnya. Sebuah moment yang membanggakan, pada tanggal 17 Mei 2011, Wakil Menteri Pendidikan Nasional RI Bapak Prof. Dr. Fasli Jalal, PhD. melakukan peletakan batu pertama pembangunan Rumah Sakit Royal Prima. Pada tanggal 14 Februari 2013, Kepala Dinas Kesehatan Propinsi Sumatera Utara telah mengeluarkan surat Izin Operasional Sementara kepada RS Royal Prima Medan No. 440.442/1641/II/TAHUN 2014. Pada tanggal 16 Februari 2014 RS. Royal Prima Medan diresmikan oleh Wakil Gubernur Propinsi Sumatera Utara Bpk. Ir. H. Tengku Erry Nuradi, M.Si dengan Izin Operasional Tetap dari Dinas Kesehatan Provinsi Sumatera Utara yang ditandatangani oleh Kepala Dinas Kesehatan Provinsi Sumatera Utara, dr. Siti Hatati Surjantini, M.Kes.",
+      "imageAlt": "Gedung RSU Royal Prima Medan"
+    },
+
+    "visionMission": {
+      "vision": {
+        "eyebrow": "Visi Kami",
+        "title": "Visi",
+        "description": "Menjadi Rumah Sakit Unggulan dibidang pelayanan kesehatan, pendidikan serta penelitian dan pengembangan kesehatan dengan mengutamakan kepentingan kesehatan masyarakat"
+      },
+
+      "mission": {
+        "eyebrow": "Misi Kami",
+        "title": "Misi",
+        "items": [
+          "Menyelenggarakan pelayanan kesehatan paripurna yang bermutu dan profesional berdasarkan bukti dan riset ilmu pengetahuan",
+          "Meningkatkan kompetensi sumber daya manusia secara terus menerus sesuai dengan perkembangan ilmu pengetahuan dan teknologi kedokteran, kedokteran gigi dan kesehatan lain",
+          "Meningkatkan kualitas dan kuantitas sarana/prasarana pelayanan kesehatan, pendidikan serta penelitian sesuai dengan perkembangan teknologi dan kebutuhan masyarakat",
+          "Melaksanakan fungsi pendidikan yang berbasis bukti dan penelitian di bidang kesehatan yang komprehensif dan terintegrasi",
+          "Menciptakan lingkungan kerja yang saling bersinergi dan menjunjung tinggi nilai-nilai kemanusiaan dan religius serta meningkatkan kesejahteraan pihak-pihak terkait",
+          "Menjalin kemitraan dengan berbagai pihak dalam upaya memperkuat peran rumah sakit dalam pelayanan dan pendidikan kesehatan",
+          "Melaksanakan pengabdian kepada kepentingan kesehatan masyarakat"
+        ]
+      }
+    },
+
+    "awards": {
+      "eyebrow": "Penghargaan",
+      "title": "Penghargaan dan Pengakuan",
+      "description": "Komitmen RSU Royal Prima terhadap mutu pelayanan kesehatan diwujudkan melalui berbagai pencapaian dan pengakuan.",
+
+      "items": {
+        "paripurna": {
+          "title": "Paripurna Bintang 5",
+          "description": "Pengakuan atas pencapaian standar mutu dan pelayanan rumah sakit.",
+          "imageAlt": "Piagam Paripurna Bintang 5 RSU Royal Prima"
+        },
+
+        "bpjsTrustMark": {
+          "title": "Trust Mark BPJS Kesehatan",
+          "description": "Pengakuan atas komitmen pelayanan dan kemitraan bersama BPJS Kesehatan.",
+          "imageAlt": "Trust Mark BPJS Kesehatan RSU Royal Prima"
+        }
+      }
+    },
+
+    "charters": {
+      "eyebrow": "Tata Kelola Rumah Sakit",
+      "title": "Piagam dan Dokumen Tata Kelola",
+      "description": "Dokumen tata kelola RSU Royal Prima sebagai bagian dari komitmen terhadap transparansi, akuntabilitas, serta penerapan tata kelola yang baik.",
+      "viewPdf": "Lihat PDF",
+
+      "items": {
+        "boardCommissioners": {
+          "title": "Piagam Dewan Komisaris",
+          "description": "Pedoman kerja dan pelaksanaan fungsi Dewan Komisaris."
+        },
+
+        "boardDirectors": {
+          "title": "Piagam Direksi",
+          "description": "Pedoman pelaksanaan tugas, tanggung jawab, dan fungsi Direksi."
+        },
+
+        "nominationRemuneration": {
+          "title": "Piagam Komite Nominasi dan Remunerasi",
+          "description": "Pedoman pelaksanaan fungsi Komite Nominasi dan Remunerasi."
+        },
+
+        "auditCommittee": {
+          "title": "Piagam Komite Audit",
+          "description": "Pedoman kerja dan pelaksanaan fungsi pengawasan Komite Audit."
+        }
+      }
+    },
+
+    "poster": {
+      "imageAlt": "RSU Royal Prima Medan"
+    },
+
+    "facilities": {
+      "eyebrow": "LIHAT LEBIH DEKAT",
+      "title": "Fasilitas dan Aktivitas Terbaru Kami",
+      "description": "Lihat lebih dekat fasilitas, lingkungan pelayanan, serta berbagai aktivitas yang berlangsung di RSU Royal Prima Medan.",
+
+      "images": {
+        "facility01": "Fasilitas pelayanan RSU Royal Prima Medan",
+        "facility02": "Fasilitas medis RSU Royal Prima Medan",
+        "facility03": "Lingkungan pelayanan RSU Royal Prima Medan",
+        "facility04": "Aktivitas RSU Royal Prima Medan"
+      }
+    }
   }
 }
