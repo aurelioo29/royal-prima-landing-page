@@ -16,6 +16,7 @@ import type { HeaderProps } from "./types/header.types";
 
 export default function Header({ logoSrc, variant = "" }: HeaderProps) {
   const t = useTranslations("Header");
+
   const pathname = usePathname();
 
   const [scrolled, setScrolled] = useState(false);
@@ -24,6 +25,11 @@ export default function Header({ logoSrc, variant = "" }: HeaderProps) {
 
   const [searchOpen, setSearchOpen] = useState(false);
 
+  /*
+   * =========================
+   * SCROLL STATE
+   * =========================
+   */
   useEffect(() => {
     function handleScroll() {
       setScrolled(window.scrollY > 16);
@@ -40,11 +46,23 @@ export default function Header({ logoSrc, variant = "" }: HeaderProps) {
     };
   }, []);
 
+  /*
+   * =========================
+   * CLOSE OVERLAY
+   * ON ROUTE CHANGE
+   * =========================
+   */
   useEffect(() => {
     setDrawerOpen(false);
     setSearchOpen(false);
   }, [pathname]);
 
+  /*
+   * =========================
+   * BODY SCROLL LOCK
+   * + ESCAPE
+   * =========================
+   */
   useEffect(() => {
     const overlayOpen = drawerOpen || searchOpen;
 
@@ -78,6 +96,9 @@ export default function Header({ logoSrc, variant = "" }: HeaderProps) {
         }`}
       >
         <div className="mx-auto flex h-[var(--site-header-height)] w-full max-w-[1760px] items-center justify-between gap-5 px-5 sm:px-8 lg:px-10 xl:gap-8 xl:px-12 2xl:px-16">
+          {/* =====================
+              LOGO
+          ====================== */}
           <Link
             href="/"
             aria-label="RSU Royal Prima Medan"
@@ -94,31 +115,48 @@ export default function Header({ logoSrc, variant = "" }: HeaderProps) {
             />
           </Link>
 
+          {/* =====================
+              DESKTOP NAV
+          ====================== */}
           <HeaderDesktopNav pathname={pathname} />
 
+          {/* =====================
+              ACTIONS
+          ====================== */}
           <div className="flex shrink-0 items-center gap-2 xl:gap-3">
+            {/* APPOINTMENT */}
             <Link
-              href="/appointments"
-              className="hidden h-12 items-center justify-center whitespace-nowrap bg-[linear-gradient(135deg,#00A4E4_0%,#0077B6_100%)] px-5 text-sm font-semibold text-white! no-underline! shadow-[0_10px_24px_rgba(0,164,228,0.20)] transition-all hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(0,164,228,0.28)] 2xl:inline-flex"
+              href="/contact#contact-form"
+              className="hidden h-12 items-center justify-center whitespace-nowrap bg-[linear-gradient(135deg,#00A4E4_0%,#0077B6_100%)] px-5 text-sm font-semibold text-white! no-underline! shadow-[0_10px_24px_rgba(0,164,228,0.20)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(0,164,228,0.28)] 2xl:inline-flex"
             >
               {t("appointmentButton")}
             </Link>
 
+            {/* SEARCH */}
             <button
               type="button"
               aria-label={t("openSearch")}
               aria-expanded={searchOpen}
-              onClick={() => setSearchOpen(true)}
+              onClick={() => {
+                setDrawerOpen(false);
+
+                setSearchOpen(true);
+              }}
               className="flex size-12 cursor-pointer items-center justify-center border border-transparent bg-transparent text-[#123B56] transition-colors hover:border-[#D5EAF3] hover:bg-[#DDF5FF] hover:text-[#0077B6]"
             >
               <HeaderIcon name="search" className="size-[23px]" />
             </button>
 
+            {/* MENU */}
             <button
               type="button"
               aria-label={t("openMenu")}
               aria-expanded={drawerOpen}
-              onClick={() => setDrawerOpen(true)}
+              onClick={() => {
+                setSearchOpen(false);
+
+                setDrawerOpen(true);
+              }}
               className="flex size-12 cursor-pointer items-center justify-center border border-[#D5EAF3] bg-white text-[#123B56] transition-colors hover:border-[#00A4E4] hover:bg-[#DDF5FF] hover:text-[#0077B6]"
             >
               <HeaderIcon name="menu" className="size-[25px]" />
@@ -126,19 +164,29 @@ export default function Header({ logoSrc, variant = "" }: HeaderProps) {
           </div>
         </div>
 
+        {/* =====================
+            BOTTOM LINE
+        ====================== */}
         <div
-          className={`absolute bottom-0 left-0 h-[2px] bg-[linear-gradient(90deg,#00A4E4,#0077B6)] transition-all duration-300 ${
+          aria-hidden="true"
+          className={`pointer-events-none absolute bottom-0 left-0 h-[2px] bg-[linear-gradient(90deg,#00A4E4,#0077B6)] transition-all duration-300 ${
             scrolled ? "w-full opacity-100" : "w-0 opacity-0"
           }`}
         />
       </header>
 
+      {/* =====================
+          DRAWER
+      ====================== */}
       <HeaderDrawer
         open={drawerOpen}
         logoSrc={logoSrc}
         onClose={() => setDrawerOpen(false)}
       />
 
+      {/* =====================
+          SEARCH
+      ====================== */}
       <HeaderSearch open={searchOpen} onClose={() => setSearchOpen(false)} />
     </>
   );

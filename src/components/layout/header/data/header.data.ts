@@ -37,7 +37,7 @@ export const HEADER_NAVIGATION: readonly HeaderNavItem[] = [
       {
         key: "appointment",
         labelKey: "appointment",
-        href: "/appointments",
+        href: "/contact#contact-form",
       },
       {
         key: "faq",
