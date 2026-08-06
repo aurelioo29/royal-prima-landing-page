@@ -2102,5 +2102,231 @@
         }
       }
     }
+  },
+
+  "SupportingDepartmentPage": {
+    "metadata": {
+      "title": "Penunjang Medis",
+      "description": "Layanan Penunjang Medis RSU Royal Prima Medan dengan fasilitas laboratorium, radiologi, CT Scan, MRI, endoskopi, fisioterapi, dan berbagai pelayanan diagnostik.",
+      "imageAlt": "Fasilitas Penunjang Medis RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Pelayanan Penunjang Medis",
+      "title": "Penunjang Medis",
+      "description": "Didukung fasilitas diagnostik dan pelayanan penunjang medis untuk membantu proses pemeriksaan, diagnosis, pemantauan, serta perawatan pasien secara terintegrasi.",
+      "imageAlt": "Peralatan Penunjang Medis RSU Royal Prima Medan",
+      "primaryAction": "Lihat Fasilitas",
+      "secondaryAction": "Informasi Layanan",
+      "badgeEyebrow": "Teknologi Medis",
+      "badgeValue": "Modern & Terintegrasi"
+    },
+
+    "overview": {
+      "eyebrow": "Tentang Penunjang Medis",
+      "title": "Mendukung Diagnosis yang Cepat dan Akurat",
+      "description": "RSU Royal Prima Medan memiliki berbagai pelayanan penunjang medis seperti laboratorium modern, radiologi termasuk CT Scan, pelayanan intensif ICU dan NICU, endoskopi, serta fisioterapi untuk membantu dokter dalam proses diagnosis dan perawatan pasien.",
+
+      "stats": {
+        "diagnostic": {
+          "value": "Diagnostik",
+          "label": "Mendukung pemeriksaan dan penegakan diagnosis pasien"
+        },
+
+        "integration": {
+          "value": "Terintegrasi",
+          "label": "Terhubung dengan Rawat Jalan, Rawat Inap, IGD, dan unit lainnya"
+        },
+
+        "technology": {
+          "value": "Modern",
+          "label": "Didukung berbagai peralatan dan teknologi medis"
+        }
+      }
+    },
+
+    "facilities": {
+      "eyebrow": "Fasilitas Utama",
+      "title": "Fasilitas Penunjang Medis",
+      "description": "Berbagai unit penunjang tersedia untuk mendukung pemeriksaan, diagnosis, pemantauan, dan proses pemulihan pasien.",
+
+      "items": {
+        "emergency": {
+          "title": "IGD 24 Jam",
+          "description": "Pelayanan kegawatdaruratan yang siap memberikan penilaian dan penanganan awal selama 24 jam."
+        },
+
+        "laboratory": {
+          "title": "Laboratorium",
+          "description": "Mendukung berbagai pemeriksaan laboratorium, termasuk pemeriksaan darah dan kebutuhan diagnostik lainnya."
+        },
+
+        "radiology": {
+          "title": "Radiologi",
+          "description": "Pelayanan pencitraan medis seperti CT Scan, MRI, X-Ray, dan pemeriksaan radiologi lainnya."
+        },
+
+        "criticalCare": {
+          "title": "ICU & NICU",
+          "description": "Pelayanan perawatan intensif bagi pasien dewasa dan bayi yang membutuhkan pemantauan khusus."
+        },
+
+        "endoscopy": {
+          "title": "Endoskopi",
+          "description": "Pelayanan diagnostik untuk membantu pemeriksaan saluran pencernaan sesuai indikasi medis."
+        },
+
+        "physiotherapy": {
+          "title": "Fisioterapi",
+          "description": "Pelayanan rehabilitasi untuk membantu memulihkan fungsi gerak dan aktivitas pasien."
+        }
+      }
+    },
+
+    "gallery": {
+      "eyebrow": "Fasilitas Kami",
+      "title": "Teknologi dan Fasilitas Penunjang",
+      "description": "Kenali lebih dekat berbagai fasilitas medis yang mendukung pelayanan diagnostik dan perawatan pasien di RSU Royal Prima Medan.",
+
+      "items": {
+        "mri": {
+          "title": "MRI 3T",
+          "description": "Fasilitas pencitraan MRI untuk membantu pemeriksaan struktur tubuh secara detail.",
+          "imageAlt": "Fasilitas MRI 3T RSU Royal Prima Medan"
+        },
+
+        "ctScan": {
+          "title": "CT Scan 128 Slice",
+          "description": "Teknologi CT Scan untuk membantu pemeriksaan dan pencitraan tubuh secara lebih detail.",
+          "imageAlt": "CT Scan 128 Slice RSU Royal Prima Medan"
+        },
+
+        "xray": {
+          "title": "X-Ray",
+          "description": "Pelayanan radiografi untuk mendukung berbagai kebutuhan pemeriksaan medis.",
+          "imageAlt": "Fasilitas X-Ray RSU Royal Prima Medan"
+        },
+
+        "dialysis": {
+          "title": "Unit Dialisis",
+          "description": "Fasilitas pelayanan dialisis untuk pasien sesuai kebutuhan dan indikasi medis.",
+          "imageAlt": "Unit Dialisis RSU Royal Prima Medan"
+        },
+
+        "endoscopy": {
+          "title": "Endoskopi",
+          "description": "Fasilitas endoskopi untuk membantu pemeriksaan diagnostik saluran pencernaan.",
+          "imageAlt": "Fasilitas Endoskopi RSU Royal Prima Medan"
+        },
+
+        "laboratory": {
+          "title": "Laboratorium",
+          "description": "Fasilitas pemeriksaan laboratorium untuk mendukung proses diagnosis dan pemantauan pasien.",
+          "imageAlt": "Laboratorium RSU Royal Prima Medan"
+        }
+      }
+    },
+
+    "advantages": {
+      "eyebrow": "Keunggulan Layanan",
+      "title": "Teknologi dan Tenaga Medis yang Saling Mendukung",
+      "description": "Pelayanan penunjang medis dikembangkan untuk membantu proses diagnosis dan perawatan dengan dukungan teknologi, tenaga medis, serta integrasi antar-unit.",
+
+      "items": {
+        "technology": {
+          "title": "Peralatan Terkini",
+          "description": "Didukung berbagai peralatan medis untuk membantu proses pemeriksaan dan pelayanan pasien."
+        },
+
+        "accuracy": {
+          "title": "Mendukung Akurasi Diagnosis",
+          "description": "Hasil pemeriksaan digunakan sebagai bagian dari evaluasi dokter untuk membantu menentukan diagnosis dan pelayanan selanjutnya."
+        },
+
+        "experts": {
+          "title": "Tenaga Medis Profesional",
+          "description": "Didukung tenaga medis, tenaga kesehatan, dokter spesialis, dan konsultan sesuai kebutuhan pelayanan."
+        },
+
+        "education": {
+          "title": "Rumah Sakit Pendidikan",
+          "description": "Pelayanan kesehatan berjalan berdampingan dengan kegiatan pendidikan serta pengembangan ilmu kesehatan."
+        },
+
+        "integration": {
+          "title": "Pelayanan Terintegrasi",
+          "description": "Terhubung dengan IGD, Rawat Jalan, Rawat Inap, Bedah Sentral, dan unit pelayanan lainnya."
+        },
+
+        "insurance": {
+          "title": "Akses Penjaminan",
+          "description": "Mendukung pelayanan pasien umum, BPJS Kesehatan, dan penjamin lainnya sesuai ketentuan yang berlaku."
+        }
+      }
+    },
+
+    "info": {
+      "eyebrow": "Informasi Pelayanan",
+      "title": "Informasi Penunjang Medis",
+      "description": "Jenis pemeriksaan dan pelayanan penunjang ditentukan berdasarkan kebutuhan pasien serta indikasi medis dari dokter.",
+
+      "service": {
+        "label": "Pelayanan",
+        "value": "Laboratorium, Radiologi, MRI, CT Scan, X-Ray, Endoskopi, Fisioterapi, dan layanan lainnya"
+      },
+
+      "integration": {
+        "label": "Integrasi",
+        "value": "Terhubung dengan unit pelayanan rumah sakit sesuai kebutuhan pasien"
+      },
+
+      "guarantee": {
+        "label": "Penjaminan",
+        "value": "Umum, BPJS Kesehatan, asuransi, dan penjamin sesuai kerja sama"
+      },
+
+      "phone": {
+        "label": "Telepon",
+        "action": "Hubungi Sekarang"
+      }
+    },
+
+    "poster": {
+      "eyebrow": "Penunjang Medis",
+      "title": "Pemeriksaan yang Mendukung Keputusan Medis",
+      "description": "Dapatkan informasi mengenai fasilitas diagnostik dan pelayanan penunjang medis RSU Royal Prima Medan sesuai kebutuhan pemeriksaan pasien.",
+      "imageAlt": "Pelayanan Penunjang Medis RSU Royal Prima Medan",
+      "contactAction": "Hubungi Rumah Sakit",
+      "doctorAction": "Cari Dokter"
+    },
+
+    "related": {
+      "eyebrow": "Layanan Terkait",
+      "title": "Pelayanan Rumah Sakit Lainnya",
+      "description": "Fasilitas penunjang medis terintegrasi dengan berbagai unit rumah sakit untuk membantu proses diagnosis dan perawatan pasien.",
+      "view": "Lihat Layanan",
+
+      "items": {
+        "emergency": {
+          "title": "Instalasi Gawat Darurat",
+          "description": "Pelayanan kegawatdaruratan selama 24 jam."
+        },
+
+        "outpatient": {
+          "title": "Rawat Jalan",
+          "description": "Pelayanan dokter spesialis dan subspesialis untuk pasien rawat jalan."
+        },
+
+        "inpatient": {
+          "title": "Rawat Inap",
+          "description": "Pelayanan perawatan pasien dengan berbagai pilihan kelas kamar."
+        },
+
+        "surgery": {
+          "title": "Bedah Sentral",
+          "description": "Pelayanan tindakan pembedahan dengan dukungan fasilitas rumah sakit."
+        }
+      }
+    }
   }
 }
