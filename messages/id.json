@@ -2328,5 +2328,208 @@
         }
       }
     }
+  },
+
+  "SurgeryDepartmentPage": {
+    "metadata": {
+      "title": "Bedah Sentral",
+      "description": "Instalasi Bedah Sentral RSU Royal Prima Medan didukung teknologi medis modern, prosedur sterilisasi, serta tim dokter spesialis dan subspesialis untuk operasi terencana maupun darurat.",
+      "imageAlt": "Instalasi Bedah Sentral RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Instalasi Bedah Sentral",
+      "title": "Bedah Sentral",
+      "description": "Pelayanan pembedahan terencana maupun darurat dengan dukungan dokter spesialis, dokter anestesi, teknologi medis, serta penerapan protokol kebersihan dan sterilisasi.",
+      "imageAlt": "Pelayanan Instalasi Bedah Sentral RSU Royal Prima Medan",
+      "primaryAction": "Informasi Bedah",
+      "secondaryAction": "Hubungi Rumah Sakit",
+      "badgeEyebrow": "Bedah Darurat",
+      "badgeValue": "Siaga 24 Jam"
+    },
+
+    "overview": {
+      "eyebrow": "Tentang Bedah Sentral",
+      "title": "Pelayanan Bedah yang Aman, Terencana, dan Terintegrasi",
+      "description": "Instalasi Bedah Sentral RSU Royal Prima Medan didukung teknologi medis modern, prosedur sterilisasi yang ketat, serta tim dokter spesialis dan subspesialis berpengalaman untuk melayani tindakan pembedahan terencana maupun kondisi bedah darurat.",
+
+      "stats": {
+        "team": {
+          "value": "Ahli",
+          "label": "Didukung dokter spesialis, subspesialis, dan dokter anestesi"
+        },
+
+        "technology": {
+          "value": "Modern",
+          "label": "Peralatan medis mendukung berbagai tindakan pembedahan"
+        },
+
+        "emergency": {
+          "value": "24 Jam",
+          "label": "Siap mendukung kebutuhan operasi darurat atau cito"
+        }
+      }
+    },
+
+    "advantages": {
+      "eyebrow": "Keunggulan Bedah Sentral",
+      "title": "Dukungan Lengkap untuk Tindakan Pembedahan",
+      "description": "Pelayanan Bedah Sentral mengutamakan kesiapan tim, teknologi medis, kebersihan, dan koordinasi pelayanan dalam mendukung kebutuhan pembedahan pasien.",
+
+      "items": {
+        "medicalTeam": {
+          "title": "Tim Medis Ahli",
+          "description": "Ditangani dokter spesialis bedah, ortopedi, saraf, vaskular, serta dokter anestesi yang kompeten sesuai kebutuhan tindakan."
+        },
+
+        "modernEquipment": {
+          "title": "Peralatan Modern",
+          "description": "Didukung peralatan medis dan perangkat bedah untuk membantu berbagai jenis tindakan pembedahan dengan lebih optimal."
+        },
+
+        "sterilization": {
+          "title": "Sterilisasi Ketat",
+          "description": "Menerapkan protokol kebersihan dan sterilisasi alat medis secara terpadu untuk membantu mengurangi risiko infeksi."
+        },
+
+        "emergency": {
+          "title": "Layanan 24 Jam",
+          "description": "Siap mendukung tindakan pembedahan darurat atau cito sesuai kondisi dan kebutuhan medis pasien."
+        }
+      }
+    },
+
+    "services": {
+      "eyebrow": "Pelayanan Bedah",
+      "title": "Pelayanan Operasi Sesuai Kebutuhan Pasien",
+      "description": "Instalasi Bedah Sentral mendukung tindakan pembedahan yang direncanakan maupun tindakan darurat berdasarkan evaluasi dan indikasi medis.",
+
+      "items": {
+        "planned": {
+          "title": "Operasi Terencana",
+          "description": "Tindakan pembedahan yang telah direncanakan berdasarkan evaluasi dokter serta kondisi pasien."
+        },
+
+        "emergency": {
+          "title": "Bedah Darurat / Cito",
+          "description": "Tindakan pembedahan yang membutuhkan penanganan segera berdasarkan kondisi kegawatdaruratan pasien."
+        },
+
+        "specialist": {
+          "title": "Dokter Spesialis dan Subspesialis",
+          "description": "Pelayanan didukung dokter dari berbagai bidang seperti bedah, ortopedi, saraf, vaskular, dan bidang terkait lainnya."
+        },
+
+        "anesthesia": {
+          "title": "Dukungan Anestesi",
+          "description": "Dokter anestesi mendukung proses pembedahan sesuai kebutuhan, kondisi, dan rencana tindakan pasien."
+        }
+      }
+    },
+
+    "gallery": {
+      "eyebrow": "Fasilitas Bedah Sentral",
+      "title": "Lingkungan Pelayanan Instalasi Bedah Sentral",
+      "description": "Kenali lebih dekat lingkungan dan fasilitas yang mendukung proses pembedahan di RSU Royal Prima Medan.",
+
+      "items": {
+        "operatingRoom": {
+          "title": "Kamar Operasi",
+          "imageAlt": "Kamar operasi RSU Royal Prima Medan"
+        },
+
+        "surgicalTeam": {
+          "title": "Tim Bedah",
+          "imageAlt": "Tim Bedah RSU Royal Prima Medan"
+        },
+
+        "equipment": {
+          "title": "Peralatan Bedah",
+          "imageAlt": "Peralatan Bedah RSU Royal Prima Medan"
+        },
+
+        "sterilization": {
+          "title": "Sterilisasi",
+          "imageAlt": "Fasilitas sterilisasi Bedah Sentral RSU Royal Prima Medan"
+        }
+      }
+    },
+
+    "safety": {
+      "eyebrow": "Sterilisasi dan Keselamatan",
+      "title": "Standar Kebersihan dalam Setiap Tindakan",
+      "description": "Protokol kebersihan dan sterilisasi diterapkan sebagai bagian penting dari pelayanan Bedah Sentral untuk mendukung keselamatan pasien dan tim medis.",
+
+      "items": [
+        "Penerapan prosedur kebersihan pada lingkungan pelayanan Bedah Sentral.",
+        "Sterilisasi alat medis dilakukan sesuai prosedur pelayanan rumah sakit.",
+        "Persiapan tindakan dilakukan secara terkoordinasi oleh tim medis yang terlibat.",
+        "Kondisi dan kebutuhan pasien dievaluasi sebelum tindakan pembedahan dilakukan."
+      ]
+    },
+
+    "info": {
+      "eyebrow": "Informasi Pelayanan",
+      "title": "Informasi Instalasi Bedah Sentral",
+      "description": "Pelaksanaan tindakan pembedahan ditentukan berdasarkan indikasi medis, evaluasi dokter, kesiapan pasien, serta koordinasi dengan unit pelayanan terkait.",
+
+      "services": {
+        "label": "Jenis Pelayanan",
+        "value": "Operasi terencana dan tindakan bedah darurat atau cito"
+      },
+
+      "emergency": {
+        "label": "Bedah Darurat",
+        "value": "Dukungan pelayanan untuk kebutuhan tindakan darurat selama 24 jam"
+      },
+
+      "team": {
+        "label": "Tim Medis",
+        "value": "Dokter spesialis, subspesialis, dokter anestesi, dan tenaga kesehatan terkait"
+      },
+
+      "phone": {
+        "label": "Telepon",
+        "action": "Hubungi Sekarang"
+      }
+    },
+
+    "poster": {
+      "eyebrow": "Instalasi Bedah Sentral",
+      "title": "Pelayanan Bedah dengan Tim yang Terkoordinasi",
+      "description": "Dapatkan informasi mengenai pelayanan Bedah Sentral RSU Royal Prima Medan, persiapan tindakan, jadwal operasi, serta kebutuhan pelayanan pasien.",
+      "imageAlt": "Pelayanan Bedah Sentral RSU Royal Prima Medan",
+      "contactAction": "Hubungi Rumah Sakit",
+      "locationAction": "Petunjuk Lokasi"
+    },
+
+    "related": {
+      "eyebrow": "Layanan Terkait",
+      "title": "Pelayanan Pendukung Lainnya",
+      "description": "Bedah Sentral terintegrasi dengan berbagai unit rumah sakit untuk mendukung proses pemeriksaan, tindakan, dan perawatan pasien.",
+      "view": "Lihat Layanan",
+
+      "items": {
+        "emergency": {
+          "title": "Instalasi Gawat Darurat",
+          "description": "Pelayanan kegawatdaruratan selama 24 jam untuk kondisi yang membutuhkan penanganan segera."
+        },
+
+        "inpatient": {
+          "title": "Rawat Inap",
+          "description": "Pelayanan perawatan pasien setelah tindakan sesuai kondisi dan kebutuhan medis."
+        },
+
+        "supporting": {
+          "title": "Penunjang Medis",
+          "description": "Pelayanan laboratorium, radiologi, dan pemeriksaan penunjang untuk mendukung kebutuhan pasien."
+        },
+
+        "outpatient": {
+          "title": "Rawat Jalan",
+          "description": "Pelayanan konsultasi dokter spesialis dan tindak lanjut pasien."
+        }
+      }
+    }
   }
 }
