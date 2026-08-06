@@ -1593,5 +1593,272 @@
         }
       }
     }
+  },
+
+  "InpatientDepartmentPage": {
+    "metadata": {
+      "title": "Rawat Inap",
+      "description": "Pelayanan Rawat Inap RSU Royal Prima Medan menyediakan pilihan kamar dari Kelas III hingga SVIP dan Eksekutif dengan dukungan tenaga medis profesional.",
+      "imageAlt": "Pelayanan Rawat Inap RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Pelayanan Rawat Inap",
+      "title": "Rawat Inap",
+      "description": "Pelayanan rawat inap dengan pilihan kelas kamar yang beragam, fasilitas pendukung kenyamanan pasien, serta pelayanan medis yang profesional dan terintegrasi.",
+      "imageAlt": "Kamar Rawat Inap RSU Royal Prima Medan",
+      "primaryAction": "Lihat Pilihan Kamar",
+      "secondaryAction": "Informasi Rawat Inap",
+      "badgeEyebrow": "Pilihan Kamar",
+      "badgeValue": "Kelas III hingga Eksekutif"
+    },
+
+    "overview": {
+      "eyebrow": "Tentang Rawat Inap",
+      "title": "Pelayanan Rawat Inap yang Nyaman dan Terintegrasi",
+      "description": "Rawat inap di RSU Royal Prima menawarkan fasilitas kamar lengkap dari Kelas III hingga SVIP dan Eksekutif, dengan tempat tidur elektrik pada kategori tertentu, dukungan tenaga medis profesional, serta penerimaan pasien pribadi, asuransi, dan peserta BPJS Kesehatan.",
+
+      "stats": {
+        "rooms": {
+          "value": "6 Kelas",
+          "label": "Pilihan kamar dari Kelas III hingga Eksekutif"
+        },
+
+        "medical": {
+          "value": "Profesional",
+          "label": "Didukung dokter spesialis dan tenaga keperawatan"
+        },
+
+        "payment": {
+          "value": "Fleksibel",
+          "label": "Melayani pasien pribadi, asuransi, dan BPJS Kesehatan"
+        }
+      }
+    },
+
+    "advantages": {
+      "eyebrow": "Keunggulan Rawat Inap",
+      "title": "Kenyamanan dan Pelayanan untuk Mendukung Pemulihan",
+      "description": "Pelayanan rawat inap dirancang untuk memberikan kenyamanan kepada pasien dan keluarga dengan pilihan kamar beragam serta dukungan pelayanan medis yang terintegrasi.",
+
+      "items": {
+        "roomChoice": {
+          "title": "Pilihan Kelas Beragam",
+          "description": "Tersedia pilihan kamar Kelas III, Kelas II, Kelas I, VIP, SVIP, hingga Eksekutif."
+        },
+
+        "modernFacilities": {
+          "title": "Fasilitas Modern",
+          "description": "Kamar kategori VIP dan SVIP dilengkapi tempat tidur elektrik, sofa penunggu, AC, TV, kulkas, dan mini bar."
+        },
+
+        "cleanliness": {
+          "title": "Kebersihan Terjaga",
+          "description": "Lingkungan kamar dan area rumah sakit dibersihkan secara berkala untuk mendukung kenyamanan pasien."
+        },
+
+        "professionals": {
+          "title": "Tenaga Medis Profesional",
+          "description": "Pelayanan didukung dokter spesialis berpengalaman serta perawat yang siap melayani kebutuhan pasien."
+        },
+
+        "integration": {
+          "title": "Pelayanan Terintegrasi",
+          "description": "Memiliki akses menuju unit pelayanan seperti IGD, ICU atau NICU, kamar bersalin, serta fisioterapi."
+        },
+
+        "payment": {
+          "title": "Kemudahan Pembayaran",
+          "description": "Melayani pasien pribadi, peserta asuransi, dan peserta program BPJS Kesehatan."
+        }
+      }
+    },
+
+    "rooms": {
+      "eyebrow": "Pilihan Kamar",
+      "title": "Fasilitas Kamar Rawat Inap",
+      "description": "Pilih kategori kamar rawat inap yang sesuai dengan kebutuhan pasien dan keluarga. Setiap kelas memiliki kapasitas serta fasilitas yang berbeda.",
+      "facilityLabel": "Fasilitas Kamar",
+      "disclaimer": "Ketersediaan kamar, fasilitas, dan ketentuan penjaminan dapat berubah. Silakan menghubungi RSU Royal Prima Medan untuk mendapatkan informasi terbaru.",
+
+      "items": {
+        "executive": {
+          "title": "Eksekutif",
+          "description": "Pilihan kamar Eksekutif tersedia sebagai salah satu kategori pelayanan rawat inap RSU Royal Prima Medan.",
+          "imageAlt": "Kamar Eksekutif RSU Royal Prima Medan",
+          "facilities": [
+            "Informasi lengkap mengenai fasilitas kamar Eksekutif dapat dikonfirmasi melalui layanan informasi RSU Royal Prima Medan."
+          ]
+        },
+
+        "svip": {
+          "title": "SVIP",
+          "description": "Kamar dengan fasilitas pendukung kenyamanan pasien dan keluarga selama menjalani perawatan.",
+          "imageAlt": "Kamar SVIP RSU Royal Prima Medan",
+          "facilities": [
+            "Tempat tidur elektrik",
+            "Meja makan",
+            "Sofa",
+            "TV LCD 32 inci",
+            "Air panas",
+            "Mini bar",
+            "Kulkas",
+            "Air conditioner"
+          ]
+        },
+
+        "vip": {
+          "title": "VIP",
+          "description": "Kamar privat dengan fasilitas lengkap untuk mendukung kenyamanan pasien dan penunggu.",
+          "imageAlt": "Kamar VIP RSU Royal Prima Medan",
+          "facilities": [
+            "Tempat tidur elektrik",
+            "Meja makan",
+            "Sofa",
+            "TV LCD 32 inci",
+            "Air panas",
+            "Mini bar",
+            "Kulkas",
+            "Air conditioner"
+          ]
+        },
+
+        "classOne": {
+          "title": "Kelas I",
+          "description": "Kamar rawat inap dengan kapasitas dua tempat tidur dan fasilitas pendukung.",
+          "imageAlt": "Kamar Kelas I RSU Royal Prima Medan",
+          "facilities": [
+            "2 tempat tidur manual",
+            "Air panas",
+            "TV LCD 32 inci",
+            "Air conditioner"
+          ]
+        },
+
+        "classTwo": {
+          "title": "Kelas II",
+          "description": "Kamar rawat inap dengan kapasitas tiga tempat tidur untuk pasien.",
+          "imageAlt": "Kamar Kelas II RSU Royal Prima Medan",
+          "facilities": [
+            "3 tempat tidur manual",
+            "TV LCD 32 inci",
+            "Air conditioner"
+          ]
+        },
+
+        "classThree": {
+          "title": "Kelas III",
+          "description": "Kamar rawat inap dengan kapasitas empat tempat tidur untuk pasien.",
+          "imageAlt": "Kamar Kelas III RSU Royal Prima Medan",
+          "facilities": [
+            "4 tempat tidur manual",
+            "TV LCD 32 inci",
+            "Air conditioner"
+          ]
+        }
+      }
+    },
+
+    "support": {
+      "eyebrow": "Pelayanan Medis dan Dukungan",
+      "title": "Pelayanan yang Saling Terhubung",
+      "description": "Pasien rawat inap didukung tenaga medis dan tenaga kesehatan serta akses menuju berbagai unit pelayanan sesuai kebutuhan dan kondisi medis pasien.",
+
+      "items": {
+        "specialistDoctors": {
+          "title": "Dokter Spesialis",
+          "description": "Didukung dokter spesialis berpengalaman untuk memberikan evaluasi dan penanganan sesuai kebutuhan pasien."
+        },
+
+        "nursing": {
+          "title": "Pelayanan Keperawatan",
+          "description": "Perawat memberikan pelayanan, pemantauan, dan dukungan selama pasien menjalani perawatan."
+        },
+
+        "emergency": {
+          "title": "Instalasi Gawat Darurat",
+          "description": "Akses menuju pelayanan kegawatdaruratan bagi pasien yang membutuhkan penanganan segera."
+        },
+
+        "criticalCare": {
+          "title": "ICU dan NICU",
+          "description": "Dukungan unit perawatan intensif sesuai kondisi dan kebutuhan medis pasien."
+        },
+
+        "maternity": {
+          "title": "Kamar Bersalin",
+          "description": "Dukungan pelayanan persalinan dan perawatan yang terhubung dengan unit rumah sakit."
+        },
+
+        "physiotherapy": {
+          "title": "Fisioterapi",
+          "description": "Pelayanan fisioterapi untuk membantu proses pemulihan berdasarkan kebutuhan pasien."
+        }
+      }
+    },
+
+    "info": {
+      "eyebrow": "Informasi Pelayanan",
+      "title": "Informasi Rawat Inap",
+      "description": "Hubungi RSU Royal Prima Medan untuk mengonfirmasi ketersediaan kamar, fasilitas, serta ketentuan administrasi dan penjaminan pasien.",
+
+      "rooms": {
+        "label": "Pilihan Kamar",
+        "value": "Kelas III, Kelas II, Kelas I, VIP, SVIP, dan Eksekutif"
+      },
+
+      "patient": {
+        "label": "Jenis Pasien",
+        "value": "Pasien pribadi, asuransi, dan peserta BPJS Kesehatan"
+      },
+
+      "availability": {
+        "label": "Ketersediaan",
+        "value": "Ketersediaan kamar perlu dikonfirmasi sebelum proses rawat inap"
+      },
+
+      "phone": {
+        "label": "Telepon",
+        "action": "Hubungi Sekarang"
+      }
+    },
+
+    "poster": {
+      "eyebrow": "Pelayanan Rawat Inap",
+      "title": "Temukan Pilihan Kamar yang Sesuai",
+      "description": "Dapatkan informasi mengenai pilihan kelas kamar, ketersediaan tempat tidur, fasilitas, dan ketentuan penjaminan pelayanan Rawat Inap RSU Royal Prima Medan.",
+      "imageAlt": "Pelayanan kamar Rawat Inap RSU Royal Prima Medan",
+      "phoneAction": "Hubungi Rumah Sakit",
+      "locationAction": "Petunjuk Lokasi"
+    },
+
+    "related": {
+      "eyebrow": "Layanan Terkait",
+      "title": "Pelayanan Pendukung Lainnya",
+      "description": "Pelayanan rawat inap terhubung dengan berbagai unit rumah sakit sesuai kebutuhan pemeriksaan, tindakan, dan kondisi pasien.",
+      "view": "Lihat Layanan",
+
+      "items": {
+        "emergency": {
+          "title": "Instalasi Gawat Darurat",
+          "description": "Pelayanan kegawatdaruratan selama 24 jam untuk kondisi yang membutuhkan penanganan segera."
+        },
+
+        "outpatient": {
+          "title": "Rawat Jalan",
+          "description": "Pelayanan konsultasi dan pemeriksaan dokter spesialis untuk pasien rawat jalan."
+        },
+
+        "supporting": {
+          "title": "Penunjang Medis",
+          "description": "Pelayanan laboratorium, radiologi, farmasi, dan unit penunjang lainnya."
+        },
+
+        "surgery": {
+          "title": "Bedah Sentral",
+          "description": "Pelayanan tindakan pembedahan sesuai indikasi dan kebutuhan medis pasien."
+        }
+      }
+    }
   }
 }
