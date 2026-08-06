@@ -2531,5 +2531,146 @@
         }
       }
     }
+  },
+
+  "FaqPage": {
+    "metadata": {
+      "title": "Pertanyaan Umum",
+      "description": "Temukan jawaban atas pertanyaan umum mengenai pelayanan, jadwal dokter, janji temu, BPJS Kesehatan, Rawat Inap, dan Instalasi Gawat Darurat RSU Royal Prima Medan.",
+      "imageAlt": "Informasi pasien RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Pertanyaan Umum",
+      "title": "Informasi yang Anda Butuhkan",
+      "description": "Temukan jawaban atas berbagai pertanyaan mengenai pelayanan rumah sakit, jadwal dokter, pendaftaran, penjaminan, dan kebutuhan pasien di RSU Royal Prima Medan.",
+      "imageAlt": "Pelayanan informasi RSU Royal Prima Medan",
+      "primaryAction": "Lihat Pertanyaan",
+      "secondaryAction": "Hubungi Kami",
+      "badgeEyebrow": "Informasi Pasien",
+      "badgeValue": "Cepat & Jelas"
+    },
+
+    "directory": {
+      "eyebrow": "Pusat Informasi",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "description": "Gunakan pencarian atau pilih kategori untuk menemukan informasi yang sesuai dengan kebutuhan Anda.",
+      "searchPlaceholder": "Cari pertanyaan atau informasi...",
+      "all": "Semua Pertanyaan",
+
+      "empty": {
+        "title": "Pertanyaan tidak ditemukan",
+        "description": "Coba gunakan kata kunci lain atau pilih kategori yang berbeda. Anda juga dapat menghubungi RSU Royal Prima Medan untuk mendapatkan informasi lebih lanjut."
+      }
+    },
+
+    "categories": {
+      "general": "Informasi Umum",
+      "appointment": "Janji Temu",
+      "doctor": "Dokter & Jadwal",
+      "bpjs": "BPJS & Penjaminan",
+      "inpatient": "Rawat Inap",
+      "emergency": "IGD"
+    },
+
+    "items": {
+      "general-01": {
+        "question": "Di mana lokasi RSU Royal Prima Medan?",
+        "answer": "RSU Royal Prima Medan berlokasi di Jl. Ayahanda No. 68A, Sei Putih Tengah, Medan Petisah, Kota Medan."
+      },
+
+      "general-02": {
+        "question": "Bagaimana cara menghubungi RSU Royal Prima Medan?",
+        "answer": "Anda dapat menghubungi RSU Royal Prima Medan melalui nomor telepon (061) 888 13182 atau melalui halaman Kontak pada website untuk mengirimkan pesan."
+      },
+
+      "general-03": {
+        "question": "Layanan apa saja yang tersedia di RSU Royal Prima Medan?",
+        "answer": "RSU Royal Prima Medan menyediakan berbagai pelayanan seperti Instalasi Gawat Darurat, Rawat Jalan, Rawat Inap, Penunjang Medis, Bedah Sentral, serta berbagai pelayanan dokter spesialis dan subspesialis."
+      },
+
+      "appointment-01": {
+        "question": "Bagaimana cara membuat janji temu dengan dokter?",
+        "answer": "Anda dapat membuka menu Janji Temu pada website. Menu tersebut akan mengarahkan Anda ke formulir kontak untuk mengirimkan kebutuhan janji temu kepada RSU Royal Prima Medan."
+      },
+
+      "appointment-02": {
+        "question": "Informasi apa yang perlu disiapkan ketika membuat janji temu?",
+        "answer": "Siapkan informasi pasien, dokter atau poliklinik yang dituju, kebutuhan konsultasi, serta nomor kontak yang dapat dihubungi agar proses konfirmasi dapat dilakukan dengan lebih mudah."
+      },
+
+      "appointment-03": {
+        "question": "Apakah jadwal janji temu dapat berubah?",
+        "answer": "Ya. Jadwal dokter maupun pelayanan dapat mengalami perubahan. Pastikan Anda mendapatkan konfirmasi jadwal terbaru sebelum datang ke rumah sakit."
+      },
+
+      "doctor-01": {
+        "question": "Bagaimana cara melihat jadwal dokter?",
+        "answer": "Silakan membuka halaman Jadwal Dokter melalui menu Layanan. Anda dapat melihat informasi dokter dan jadwal pelayanan yang tersedia."
+      },
+
+      "doctor-02": {
+        "question": "Apakah RSU Royal Prima memiliki dokter spesialis dan subspesialis?",
+        "answer": "Ya. RSU Royal Prima Medan memiliki berbagai dokter spesialis dan subspesialis dari berbagai bidang pelayanan. Informasi dokter dapat dilihat melalui halaman Cari Dokter."
+      },
+
+      "doctor-03": {
+        "question": "Apakah jadwal dokter selalu sama setiap minggu?",
+        "answer": "Jadwal dokter dapat berubah karena kegiatan medis, tindakan, atau kondisi tertentu. Sebaiknya periksa jadwal terbaru sebelum melakukan kunjungan."
+      },
+
+      "bpjs-01": {
+        "question": "Apakah RSU Royal Prima Medan melayani peserta BPJS Kesehatan?",
+        "answer": "RSU Royal Prima Medan melayani peserta BPJS Kesehatan sesuai prosedur, rujukan, dan ketentuan yang berlaku."
+      },
+
+      "bpjs-02": {
+        "question": "Apakah rumah sakit menerima asuransi selain BPJS?",
+        "answer": "Rumah sakit dapat melayani pasien dengan asuransi atau penjamin yang memiliki kerja sama dengan RSU Royal Prima Medan. Ketersediaan dan ketentuan penjaminan sebaiknya dikonfirmasi sebelum mendapatkan pelayanan."
+      },
+
+      "bpjs-03": {
+        "question": "Dokumen apa yang perlu dibawa oleh peserta BPJS?",
+        "answer": "Persyaratan dapat berbeda sesuai jenis pelayanan dan ketentuan BPJS Kesehatan. Pastikan membawa identitas pasien serta dokumen rujukan atau persyaratan lain yang berlaku."
+      },
+
+      "inpatient-01": {
+        "question": "Apa saja pilihan kamar Rawat Inap yang tersedia?",
+        "answer": "Pilihan kamar Rawat Inap meliputi Kelas III, Kelas II, Kelas I, VIP, SVIP, hingga Eksekutif. Ketersediaan kamar perlu dikonfirmasi kepada rumah sakit."
+      },
+
+      "inpatient-02": {
+        "question": "Apakah kamar VIP dan SVIP memiliki fasilitas khusus?",
+        "answer": "Kamar VIP dan SVIP dilengkapi fasilitas seperti tempat tidur elektrik, meja makan, sofa, TV LCD 32 inci, air panas, mini bar, kulkas, dan air conditioner."
+      },
+
+      "inpatient-03": {
+        "question": "Bagaimana cara mengetahui ketersediaan kamar Rawat Inap?",
+        "answer": "Ketersediaan kamar dapat berubah setiap saat. Silakan menghubungi RSU Royal Prima Medan untuk mendapatkan informasi ketersediaan kamar terbaru."
+      },
+
+      "emergency-01": {
+        "question": "Apakah Instalasi Gawat Darurat buka 24 jam?",
+        "answer": "Ya. Instalasi Gawat Darurat RSU Royal Prima Medan memberikan pelayanan kegawatdaruratan selama 24 jam setiap hari."
+      },
+
+      "emergency-02": {
+        "question": "Apakah pasien IGD dilayani berdasarkan urutan kedatangan?",
+        "answer": "Pelayanan IGD menggunakan sistem triase. Prioritas ditentukan berdasarkan tingkat kegawatan dan kondisi medis pasien, sehingga pasien dengan kondisi yang lebih serius dapat ditangani terlebih dahulu."
+      },
+
+      "emergency-03": {
+        "question": "Kapan pasien sebaiknya datang ke IGD?",
+        "answer": "IGD ditujukan untuk kondisi yang membutuhkan penanganan medis segera, seperti kesulitan bernapas, nyeri dada berat, penurunan kesadaran, perdarahan berat, kejang, cedera serius, gejala stroke, atau kondisi darurat lainnya."
+      }
+    },
+
+    "contact": {
+      "eyebrow": "Butuh Bantuan?",
+      "title": "Belum Menemukan Jawaban yang Anda Cari?",
+      "description": "Tim RSU Royal Prima Medan siap membantu memberikan informasi mengenai pelayanan, dokter, jadwal, fasilitas, dan kebutuhan pasien.",
+      "primaryAction": "Kirim Pesan",
+      "secondaryAction": "(061) 888 13182"
+    }
   }
 }
