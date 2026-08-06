@@ -1860,5 +1860,247 @@
         }
       }
     }
+  },
+
+  "OutpatientDepartmentPage": {
+    "metadata": {
+      "title": "Rawat Jalan",
+      "description": "Pelayanan Rawat Jalan RSU Royal Prima Medan dengan dokter spesialis dan subspesialis, antrean terintegrasi, serta dukungan fasilitas penunjang medis.",
+      "imageAlt": "Pelayanan Rawat Jalan RSU Royal Prima Medan"
+    },
+
+    "hero": {
+      "eyebrow": "Pelayanan Rawat Jalan",
+      "title": "Rawat Jalan",
+      "description": "Pelayanan poliklinik dengan pilihan dokter spesialis dan subspesialis, sistem antrean yang terintegrasi, serta dukungan pelayanan penunjang medis untuk memberikan pengalaman pelayanan yang lebih nyaman.",
+      "imageAlt": "Pelayanan poliklinik RSU Royal Prima Medan",
+      "primaryAction": "Lihat Jadwal Dokter",
+      "secondaryAction": "Informasi Rawat Jalan",
+      "badgeEyebrow": "Pelayanan Poliklinik",
+      "badgeValue": "Spesialis & Subspesialis"
+    },
+
+    "overview": {
+      "eyebrow": "Tentang Rawat Jalan",
+      "title": "Pelayanan Poliklinik yang Mudah Diakses dan Terintegrasi",
+      "description": "Keunggulan Rawat Jalan RSU Royal Prima Medan meliputi kemudahan antrean online yang terintegrasi dengan BPJS Kesehatan, ketersediaan dokter spesialis dan subspesialis, serta dukungan fasilitas penunjang medis seperti laboratorium dan radiologi.",
+
+      "stats": {
+        "queue": {
+          "value": "Digital",
+          "label": "Sistem antrean untuk mendukung proses pendaftaran"
+        },
+
+        "doctors": {
+          "value": "Lengkap",
+          "label": "Pilihan dokter spesialis dan subspesialis"
+        },
+
+        "support": {
+          "value": "Terintegrasi",
+          "label": "Didukung laboratorium, radiologi, dan pelayanan penunjang"
+        }
+      }
+    },
+
+    "advantages": {
+      "eyebrow": "Keunggulan Rawat Jalan",
+      "title": "Pelayanan yang Lebih Mudah, Cepat, dan Terintegrasi",
+      "description": "Pelayanan Rawat Jalan dirancang untuk memberikan kemudahan mulai dari pendaftaran, konsultasi dokter, pemeriksaan penunjang, hingga proses kontrol pasien.",
+
+      "items": {
+        "onlineQueue": {
+          "title": "Antrean Online",
+          "description": "Sistem antrean digital terintegrasi membantu mempercepat proses pendaftaran dan mengurangi waktu tunggu pasien."
+        },
+
+        "specialists": {
+          "title": "Dokter Spesialis dan Subspesialis",
+          "description": "Tersedia berbagai pilihan dokter spesialis dan subspesialis sesuai kebutuhan pelayanan pasien."
+        },
+
+        "medicalSupport": {
+          "title": "Penunjang Medis",
+          "description": "Didukung fasilitas penunjang seperti laboratorium dan radiologi untuk membantu proses pemeriksaan."
+        },
+
+        "flexibleSchedule": {
+          "title": "Jadwal yang Fleksibel",
+          "description": "Pelayanan poliklinik tersedia dari Senin hingga Sabtu dengan poli tertentu yang juga memiliki pelayanan pada hari Minggu."
+        },
+
+        "insurance": {
+          "title": "Beragam Penjaminan",
+          "description": "Melayani pasien umum, asuransi swasta, perusahaan, serta program jaminan kesehatan."
+        },
+
+        "organizedControl": {
+          "title": "Alur Kontrol Tertib",
+          "description": "Proses kontrol pasien didukung konfirmasi jadwal dokter sehingga pelayanan dapat direncanakan dengan lebih baik."
+        }
+      }
+    },
+
+    "clinics": {
+      "eyebrow": "Pilihan Poliklinik",
+      "title": "Beragam Layanan Dokter Spesialis",
+      "description": "Rawat Jalan RSU Royal Prima Medan menyediakan berbagai pilihan poliklinik untuk memenuhi kebutuhan konsultasi dan pemeriksaan pasien.",
+
+      "note": "Daftar berikut merupakan beberapa contoh layanan poliklinik. Ketersediaan dokter dan jadwal pelayanan dapat berubah, silakan melihat Jadwal Dokter untuk informasi terbaru.",
+
+      "items": {
+        "internalMedicine": {
+          "title": "Penyakit Dalam",
+          "description": "Pelayanan konsultasi dan penanganan berbagai penyakit pada pasien dewasa."
+        },
+
+        "pediatrics": {
+          "title": "Anak",
+          "description": "Pelayanan kesehatan untuk bayi, anak, dan remaja."
+        },
+
+        "obgyn": {
+          "title": "Kebidanan dan Kandungan",
+          "description": "Pelayanan kesehatan ibu, kehamilan, dan kesehatan reproduksi wanita."
+        },
+
+        "neurology": {
+          "title": "Saraf",
+          "description": "Pelayanan konsultasi untuk gangguan sistem saraf dan kondisi neurologis."
+        },
+
+        "cardiology": {
+          "title": "Jantung",
+          "description": "Pelayanan konsultasi dan evaluasi kesehatan jantung serta pembuluh darah."
+        },
+
+        "orthopedics": {
+          "title": "Ortopedi",
+          "description": "Pelayanan untuk gangguan tulang, sendi, dan sistem muskuloskeletal."
+        }
+      }
+    },
+
+    "schedule": {
+      "eyebrow": "Jadwal Pelayanan",
+      "title": "Jam Pelayanan Poliklinik",
+      "description": "Pelayanan Rawat Jalan memiliki jadwal yang disesuaikan dengan dokter dan masing-masing poliklinik.",
+
+      "weekday": {
+        "label": "Senin – Jumat",
+        "value": "Pelayanan poliklinik sesuai jadwal masing-masing dokter."
+      },
+
+      "saturday": {
+        "label": "Sabtu",
+        "value": "Beberapa pelayanan poliklinik tetap tersedia sesuai jadwal dokter."
+      },
+
+      "sunday": {
+        "label": "Minggu",
+        "value": "Poliklinik tertentu memiliki jadwal pelayanan khusus."
+      },
+
+      "note": "Jadwal dokter dapat berubah. Pastikan melakukan pengecekan jadwal terbaru sebelum datang ke rumah sakit.",
+
+      "button": "Lihat Jadwal Dokter"
+    },
+
+    "access": {
+      "eyebrow": "Akses dan Penjaminan",
+      "title": "Kemudahan Akses untuk Berbagai Pasien",
+      "description": "Rawat Jalan RSU Royal Prima Medan melayani berbagai kategori pasien dan metode penjaminan sesuai ketentuan yang berlaku.",
+
+      "items": {
+        "general": {
+          "title": "Pasien Umum",
+          "description": "Pelayanan tersedia bagi pasien dengan pembayaran pribadi."
+        },
+
+        "insurance": {
+          "title": "Asuransi Swasta",
+          "description": "Melayani peserta asuransi sesuai kerja sama dan ketentuan penjaminan."
+        },
+
+        "corporate": {
+          "title": "Perusahaan",
+          "description": "Pelayanan bagi pasien dari perusahaan yang memiliki kerja sama dengan rumah sakit."
+        },
+
+        "bpjs": {
+          "title": "BPJS Kesehatan",
+          "description": "Melayani peserta BPJS Kesehatan sesuai prosedur, rujukan, dan ketentuan yang berlaku."
+        }
+      },
+
+      "lounge": {
+        "title": "Layanan Prioritas dan Lounge",
+        "description": "Tersedia layanan prioritas khusus dan fasilitas lounge penunjang bagi peserta asuransi tertentu sesuai kerja sama dan ketentuan yang berlaku."
+      }
+    },
+
+    "info": {
+      "eyebrow": "Informasi Pelayanan",
+      "title": "Informasi Rawat Jalan",
+      "description": "Pastikan jadwal dokter, persyaratan administrasi, dan penjaminan telah dikonfirmasi sebelum kunjungan ke poliklinik.",
+
+      "schedule": {
+        "label": "Hari Pelayanan",
+        "value": "Senin hingga Sabtu, dengan poli tertentu pada hari Minggu"
+      },
+
+      "registration": {
+        "label": "Pendaftaran",
+        "value": "Mendukung sistem antrean dan pendaftaran digital"
+      },
+
+      "patient": {
+        "label": "Penjaminan",
+        "value": "Umum, asuransi, perusahaan, dan BPJS Kesehatan"
+      },
+
+      "phone": {
+        "label": "Telepon",
+        "action": "Hubungi Sekarang"
+      }
+    },
+
+    "poster": {
+      "eyebrow": "Pelayanan Rawat Jalan",
+      "title": "Rencanakan Kunjungan Anda dengan Lebih Mudah",
+      "description": "Periksa jadwal dokter sebelum datang dan dapatkan informasi mengenai poliklinik, pendaftaran, serta persyaratan penjaminan Rawat Jalan RSU Royal Prima Medan.",
+      "imageAlt": "Pelayanan Rawat Jalan RSU Royal Prima Medan",
+      "scheduleAction": "Lihat Jadwal Dokter",
+      "contactAction": "Hubungi Rumah Sakit"
+    },
+
+    "related": {
+      "eyebrow": "Layanan Terkait",
+      "title": "Pelayanan Pendukung Lainnya",
+      "description": "Pelayanan Rawat Jalan terhubung dengan berbagai unit rumah sakit untuk mendukung kebutuhan pemeriksaan dan perawatan pasien.",
+      "view": "Lihat Layanan",
+
+      "items": {
+        "emergency": {
+          "title": "Instalasi Gawat Darurat",
+          "description": "Pelayanan kegawatdaruratan selama 24 jam."
+        },
+
+        "inpatient": {
+          "title": "Rawat Inap",
+          "description": "Pelayanan perawatan pasien dengan berbagai pilihan kelas kamar."
+        },
+
+        "supporting": {
+          "title": "Penunjang Medis",
+          "description": "Laboratorium, radiologi, farmasi, dan pelayanan penunjang lainnya."
+        },
+
+        "surgery": {
+          "title": "Bedah Sentral",
+          "description": "Pelayanan tindakan pembedahan sesuai kebutuhan medis pasien."
+        }
+      }
+    }
   }
 }
