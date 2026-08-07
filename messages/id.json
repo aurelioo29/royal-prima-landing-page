@@ -496,6 +496,9 @@
       "generalCategory": "Umum / Non-JKN",
       "jknCategory": "JKN / BPJS",
 
+      "bpjsLabel": "BPJS",
+      "nonBpjsLabel": "Non BPJS",
+
       "room": "Ruangan",
       "doctors": "Dokter",
       "noSchedule": "Tidak ada jadwal praktik",

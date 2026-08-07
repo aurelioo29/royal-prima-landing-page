@@ -37,7 +37,10 @@ export type ResolvedTimetableEntry = TimetableEntry & {
 
 export type TimetableDayOption = {
   key: TimetableDayKey;
+
   label: string;
+
+  categoryLabel: string;
 };
 
 export type TimetableDepartmentOption = {

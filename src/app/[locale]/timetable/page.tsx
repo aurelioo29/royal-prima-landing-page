@@ -219,10 +219,17 @@ export default async function TimetablePage({
    * ===========================
    */
 
+  const categoryLabel =
+    activeCategory === "jkn"
+      ? t("schedule.bpjsLabel")
+      : t("schedule.nonBpjsLabel");
+
   const days: TimetableDayOption[] = TIMETABLE_DAY_KEYS.map((day) => ({
     key: day,
 
     label: t(`days.${day}`),
+
+    categoryLabel,
   }));
 
   const resolvedEntries: ResolvedTimetableEntry[] = timetableEntries.map(

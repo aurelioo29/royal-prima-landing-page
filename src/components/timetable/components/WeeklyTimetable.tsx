@@ -124,10 +124,16 @@ export default function WeeklyTimetable({
               }`}
             >
               {/* DAY HEADER */}
-              <header className="flex min-h-[64px] items-center justify-between border-b border-[#D5E7EF] bg-[#EFF7FA] px-5">
-                <h3 className="m-0! text-[14px] font-bold text-[#123B56]">
-                  {day.label}
-                </h3>
+              <header className="flex min-h-[76px] items-center justify-between border-b border-[#D5E7EF] bg-[#EFF7FA] px-5">
+                <div>
+                  <h3 className="m-0! text-[14px] font-bold text-[#123B56]">
+                    {day.label}
+                  </h3>
+
+                  <p className="mt-1 mb-0! text-[10px] font-bold uppercase tracking-[0.12em] text-[#0077B6]">
+                    {day.categoryLabel}
+                  </p>
+                </div>
 
                 {dayEntries.length > 0 && (
                   <span className="flex min-w-7 items-center justify-center bg-white px-2 py-1 text-[11px] font-bold text-[#66879A]">
