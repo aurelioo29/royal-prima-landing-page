@@ -2675,5 +2675,74 @@
       "primaryAction": "Kirim Pesan",
       "secondaryAction": "(061) 888 13182"
     }
+  },
+
+  "AppointmentPage": {
+    "form": {
+      "eyebrow": "Buat Janji Temu",
+      "title": "Atur jadwal kunjungan Anda",
+      "description": "Pilih klinik, dokter, dan jadwal praktik yang sesuai dengan kebutuhan Anda.",
+
+      "fields": {
+        "name": {
+          "label": "Nama Pasien",
+          "placeholder": "Masukkan nama lengkap pasien"
+        },
+
+        "phone": {
+          "label": "Nomor Telepon",
+          "placeholder": "Contoh: 081234567890"
+        },
+
+        "category": {
+          "label": "Jenis Layanan",
+          "nonJkn": "Umum / Non-JKN",
+          "jkn": "JKN / BPJS"
+        },
+
+        "location": {
+          "label": "Klinik / Poliklinik",
+          "placeholder": "Pilih klinik",
+          "loading": "Memuat klinik..."
+        },
+
+        "doctor": {
+          "label": "Dokter",
+          "placeholder": "Pilih dokter",
+          "loading": "Memuat dokter..."
+        },
+
+        "schedule": {
+          "label": "Tanggal & Jadwal Kunjungan",
+          "placeholder": "Pilih jadwal kunjungan",
+          "selectDoctor": "Pilih dokter terlebih dahulu"
+        }
+      },
+
+      "doctorScheduleLabel": "Jadwal Praktik Dokter",
+
+      "privacyNote": "Pastikan nama pasien, nomor telepon, dokter, dan jadwal kunjungan telah sesuai sebelum membuat janji temu.",
+
+      "submit": "Buat Janji Temu",
+      "submitting": "Memproses...",
+
+      "errors": {
+        "required": "Mohon lengkapi seluruh data yang diperlukan.",
+        "locations": "Daftar klinik belum dapat dimuat. Silakan coba kembali.",
+        "doctors": "Jadwal dokter belum dapat dimuat. Silakan coba kembali.",
+        "submit": "Janji temu belum berhasil dibuat. Silakan coba kembali."
+      },
+
+      "success": {
+        "eyebrow": "Janji Temu Berhasil",
+        "title": "Janji temu Anda telah dibuat",
+        "bookingCode": "Kode Booking",
+        "status": "Status",
+        "doctor": "Dokter",
+        "clinic": "Klinik",
+        "schedule": "Jadwal Kunjungan",
+        "checkIn": "Mohon hadir setidaknya {minutes} menit sebelum jadwal kunjungan."
+      }
+    }
   }
 }

@@ -6,7 +6,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { notFound } from "next/navigation";
 
-import ContactForm from "@/components/contact/ContactForm";
+// import ContactForm from "@/components/contact/ContactForm";
 import ContactIcon from "@/components/contact/ContactIcon";
 
 import { contactData } from "@/components/contact/contact.data";
@@ -16,6 +16,7 @@ import { PageScrollProgress, Reveal } from "@/components/shared/motion";
 import PageHero from "@/components/shared/page-hero";
 
 import { routing } from "@/i18n/routing";
+import AppointmentForm from "@/components/appointment/AppointmentForm";
 
 type ContactPageProps = {
   params: Promise<{
@@ -127,7 +128,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
           <div className="mx-auto grid w-full max-w-[1760px] grid-cols-1 gap-20 px-5 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-24 lg:px-10 xl:gap-32 xl:px-12 2xl:px-16">
             {/* Form */}
             <Reveal direction="right" distance={38} amount={0.12}>
-              <ContactForm />
+              <AppointmentForm />
             </Reveal>
 
             {/* Informasi kontak */}
