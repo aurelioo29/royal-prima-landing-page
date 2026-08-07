@@ -1,55 +1,41 @@
-import type { CSSProperties } from "react";
+import type { ResolvedTimetableEntry } from "../types/timetable.types";
 
-import type {
-  TimetableDepartmentKey,
-  WeeklyTimetableProps,
-} from "../types/timetable.types";
+import type { WeeklyTimetableProps } from "../types/timetable.types";
 
 import TimetableIcon from "./TimetableIcon";
 
-const START_HOUR = 8;
-const END_HOUR = 17;
-const SLOT_MINUTES = 30;
-
-const TOTAL_SLOTS = ((END_HOUR - START_HOUR) * 60) / SLOT_MINUTES;
-
-const DEPARTMENT_COLORS: Record<
-  TimetableDepartmentKey,
+const COLOR_PALETTE = [
   {
-    background: string;
-    border: string;
-  }
-> = {
-  pediatrics: {
-    background: "#DDF3F8",
-    border: "#48A8D8",
+    background: "#F0FAFD",
+    border: "#72C8E7",
+    accent: "#0077B6",
   },
-
-  obstetricsGynecology: {
-    background: "#E8F4FB",
-    border: "#69A7D3",
+  {
+    background: "#F3F9FD",
+    border: "#8BC4DF",
+    accent: "#347FA8",
   },
-
-  cardiology: {
-    background: "#E4F3F5",
-    border: "#3C9EAF",
+  {
+    background: "#F0F9F8",
+    border: "#82C6BB",
+    accent: "#358D7D",
   },
-
-  pulmonology: {
-    background: "#EAF6F2",
-    border: "#58A88E",
+  {
+    background: "#F7F6FC",
+    border: "#AAA5D5",
+    accent: "#716BB1",
   },
-
-  psychiatry: {
-    background: "#F0EFFB",
-    border: "#817CC3",
+  {
+    background: "#F7FAFD",
+    border: "#9CB8D5",
+    accent: "#607FA7",
   },
-
-  neurology: {
-    background: "#EEF2FA",
-    border: "#718FC5",
+  {
+    background: "#F4FAF7",
+    border: "#92CBB3",
+    accent: "#4D9779",
   },
-};
+] as const;
 
 function timeToMinutes(time: string) {
   const [hour, minute] = time.split(":").map(Number);
@@ -57,30 +43,33 @@ function timeToMinutes(time: string) {
   return hour * 60 + minute;
 }
 
-function getSlotIndex(time: string) {
-  const scheduleStart = START_HOUR * 60;
+function sortEntries(entries: readonly ResolvedTimetableEntry[]) {
+  return [...entries].sort((a, b) => {
+    const startDifference =
+      timeToMinutes(a.startTime) - timeToMinutes(b.startTime);
 
-  return (timeToMinutes(time) - scheduleStart) / SLOT_MINUTES;
+    if (startDifference !== 0) {
+      return startDifference;
+    }
+
+    return timeToMinutes(a.endTime) - timeToMinutes(b.endTime);
+  });
 }
 
-function getEventStyle(
-  dayIndex: number,
-  startTime: string,
-  endTime: string,
-): CSSProperties {
-  const startSlot = getSlotIndex(startTime);
+function hashString(value: string) {
+  let hash = 0;
 
-  const endSlot = getSlotIndex(endTime);
+  for (let index = 0; index < value.length; index += 1) {
+    hash = (hash * 31 + value.charCodeAt(index)) | 0;
+  }
 
-  return {
-    gridColumn: dayIndex + 2,
-
-    gridRow: `${startSlot + 2} / ${endSlot + 2}`,
-  };
+  return hash >>> 0;
 }
 
-function formatHour(hour: number) {
-  return `${String(hour).padStart(2, "0")}:00`;
+function getDepartmentColor(department: string) {
+  const index = hashString(department) % COLOR_PALETTE.length;
+
+  return COLOR_PALETTE[index];
 }
 
 export default function WeeklyTimetable({
@@ -91,242 +80,181 @@ export default function WeeklyTimetable({
   if (entries.length === 0) {
     return (
       <div className="border-y border-[#DCEAF1] py-16 text-center">
-        <h3 className="m-0! text-2xl font-bold text-[#123B56]">
+        <span className="mx-auto flex size-12 items-center justify-center bg-[#F0FAFD] text-[#0077B6]">
+          <TimetableIcon name="calendar" className="size-5" />
+        </span>
+
+        <h3 className="mt-5 mb-0! text-2xl font-bold text-[#123B56]">
           {labels.emptyTitle}
         </h3>
 
-        <p className="mx-auto mt-4 mb-0! max-w-[560px] text-sm leading-7 text-[#57778C]">
+        <p className="mx-auto mt-3 mb-0! max-w-[560px] text-sm leading-7 text-[#57778C]">
           {labels.emptyDescription}
         </p>
       </div>
     );
   }
 
+  /*
+   * Biasanya page hanya menampilkan satu klinik.
+   *
+   * Tetapi kita tetap support kalau suatu saat
+   * multiple clinic ditampilkan sekaligus.
+   */
+  const departmentCount = new Set(entries.map((entry) => entry.department))
+    .size;
+
+  const showDepartmentLabel = departmentCount > 1;
+
   return (
-    <>
-      {/* DESKTOP */}
-      <div className="hidden overflow-x-auto lg:block">
-        <div
-          className="relative grid min-w-[1450px] border-r border-b border-[#CFE3EC] bg-white"
-          style={{
-            gridTemplateColumns: "110px repeat(6, minmax(210px, 1fr))",
-
-            gridTemplateRows: `58px repeat(${TOTAL_SLOTS}, 56px)`,
-          }}
-        >
-          {/* Corner */}
-          <div className="border-t border-l border-[#CFE3EC]" />
-
-          {/* Day headers */}
-          {days.map((day, index) => (
-            <div
-              key={day.key}
-              className="flex items-center justify-center border-t border-l border-[#CFE3EC] bg-[#F5FAFC] px-4 text-sm font-bold text-[#123B56]"
-              style={{
-                gridColumn: index + 2,
-
-                gridRow: 1,
-              }}
-            >
-              {day.label}
-            </div>
-          ))}
-
-          {/* Vertical backgrounds */}
-          {days.map((day, index) => (
-            <div
-              key={`column-${day.key}`}
-              aria-hidden="true"
-              className="border-l border-[#CFE3EC]"
-              style={{
-                gridColumn: index + 2,
-
-                gridRow: `2 / ${TOTAL_SLOTS + 2}`,
-              }}
-            />
-          ))}
-
-          {/* Horizontal lines */}
-          {Array.from({
-            length: TOTAL_SLOTS + 1,
-          }).map((_, index) => (
-            <div
-              key={`line-${index}`}
-              aria-hidden="true"
-              className={
-                index % 2 === 0
-                  ? "border-t border-[#CFE3EC]"
-                  : "border-t border-[#EAF1F4]"
-              }
-              style={{
-                gridColumn: "2 / 8",
-                gridRow: index + 2,
-              }}
-            />
-          ))}
-
-          {/* Time labels */}
-          {Array.from({
-            length: END_HOUR - START_HOUR,
-          }).map((_, index) => {
-            const hour = START_HOUR + index;
-
-            return (
-              <div
-                key={hour}
-                className="border-t border-l border-[#CFE3EC] px-4 pt-3 text-xs font-semibold text-[#7793A5]"
-                style={{
-                  gridColumn: 1,
-                  gridRow: index * 2 + 2,
-                }}
-              >
-                {formatHour(hour)}
-              </div>
-            );
-          })}
-
-          {/* Schedule cards */}
-          {entries.map((entry) => {
-            const dayIndex = days.findIndex((day) => day.key === entry.day);
-
-            if (dayIndex < 0) {
-              return null;
-            }
-
-            const color = DEPARTMENT_COLORS[entry.department];
-
-            return (
-              <article
-                key={entry.id}
-                className="z-10 m-1.5 flex min-h-0 flex-col overflow-hidden border p-4 shadow-[0_7px_20px_rgba(18,59,86,0.06)]"
-                style={{
-                  ...getEventStyle(dayIndex, entry.startTime, entry.endTime),
-
-                  backgroundColor: color.background,
-
-                  borderColor: color.border,
-                }}
-              >
-                <p className="m-0! text-[13px] leading-5 font-semibold text-[#55798D]">
-                  {entry.departmentLabel}
-                </p>
-
-                <p className="mt-1 mb-0! inline-flex items-center gap-2 text-xs font-semibold text-[#7894A3]">
-                  <TimetableIcon name="clock" className="size-3.5" />
-
-                  {entry.timeLabel}
-                </p>
-
-                <div
-                  className="my-3 h-px"
-                  style={{
-                    backgroundColor: color.border,
-                  }}
-                />
-
-                <div className="space-y-1">
-                  {entry.doctors.map((doctor) => (
-                    <p
-                      key={doctor}
-                      className="m-0! text-[13px] leading-5 font-bold text-[#123B56]"
-                    >
-                      {doctor}
-                    </p>
-                  ))}
-                </div>
-
-                <p className="mt-auto mb-0! pt-4 text-xs font-semibold text-[#7894A3]">
-                  {entry.room}
-                </p>
-              </article>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* MOBILE / TABLET */}
-      <div className="space-y-9 lg:hidden">
-        {days.map((day) => {
-          const dayEntries = entries.filter((entry) => entry.day === day.key);
-
-          if (dayEntries.length === 0) {
-            return null;
-          }
+    <div className="border border-[#D5E7EF] bg-[#F8FBFC]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        {days.map((day, index) => {
+          const dayEntries = sortEntries(
+            entries.filter((entry) => entry.day === day.key),
+          );
 
           return (
-            <section key={day.key}>
-              <div className="flex items-center gap-4 border-b border-[#D8E8EF] pb-4">
-                <span className="flex size-11 items-center justify-center bg-[#EAF7FC] text-[#0077B6]">
-                  <TimetableIcon name="calendar" className="size-5" />
-                </span>
-
-                <h3 className="m-0! text-xl font-bold text-[#123B56]">
+            <section
+              key={day.key}
+              className={`min-w-0 ${
+                index !== days.length - 1
+                  ? "xl:border-r xl:border-[#D5E7EF]"
+                  : ""
+              }`}
+            >
+              {/* DAY HEADER */}
+              <header className="flex min-h-[64px] items-center justify-between border-b border-[#D5E7EF] bg-[#EFF7FA] px-5">
+                <h3 className="m-0! text-[14px] font-bold text-[#123B56]">
                   {day.label}
                 </h3>
-              </div>
 
-              <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
-                {dayEntries.map((entry) => {
-                  const color = DEPARTMENT_COLORS[entry.department];
+                {dayEntries.length > 0 && (
+                  <span className="flex min-w-7 items-center justify-center bg-white px-2 py-1 text-[11px] font-bold text-[#66879A]">
+                    {dayEntries.length}
+                  </span>
+                )}
+              </header>
 
-                  return (
-                    <article
-                      key={entry.id}
-                      className="border p-5"
-                      style={{
-                        backgroundColor: color.background,
+              {/* DAY CONTENT */}
+              <div className="space-y-3 p-3">
+                {dayEntries.length === 0 ? (
+                  <div className="flex min-h-[130px] flex-col items-center justify-center border border-dashed border-[#D9E8EE] bg-white px-4 text-center">
+                    <TimetableIcon
+                      name="calendar"
+                      className="size-5 text-[#A5BAC5]"
+                    />
 
-                        borderColor: color.border,
-                      }}
-                    >
-                      <p className="m-0! text-xs font-bold uppercase tracking-[0.12em] text-[#55798D]">
-                        {entry.departmentLabel}
-                      </p>
+                    <p className="mt-3 mb-0! text-xs leading-5 font-medium text-[#91A7B3]">
+                      {labels.noSchedule}
+                    </p>
+                  </div>
+                ) : (
+                  dayEntries.map((entry) => {
+                    const color = getDepartmentColor(entry.department);
 
-                      <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3">
-                        <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#123B56]">
-                          <TimetableIcon
-                            name="clock"
-                            className="size-4 text-[#0077B6]"
-                          />
+                    return (
+                      <article
+                        key={entry.id}
+                        className="relative overflow-hidden border bg-white shadow-[0_5px_18px_rgba(18,59,86,0.05)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_10px_24px_rgba(18,59,86,0.09)]"
+                        style={{
+                          borderColor: color.border,
+                        }}
+                      >
+                        {/* Accent */}
+                        <div
+                          className="absolute inset-y-0 left-0 w-[3px]"
+                          style={{
+                            backgroundColor: color.accent,
+                          }}
+                        />
 
-                          {entry.timeLabel}
-                        </span>
-
-                        <span className="inline-flex items-center gap-2 text-sm font-semibold text-[#57778C]">
-                          <TimetableIcon
-                            name="location"
-                            className="size-4 text-[#0077B6]"
-                          />
-
-                          {entry.room}
-                        </span>
-                      </div>
-
-                      <div className="mt-5 border-t border-[#123B56]/12 pt-5">
-                        <p className="m-0! text-xs font-bold uppercase tracking-[0.12em] text-[#7793A5]">
-                          {labels.doctors}
-                        </p>
-
-                        <div className="mt-3 space-y-2">
-                          {entry.doctors.map((doctor) => (
+                        <div className="p-4 pl-5">
+                          {showDepartmentLabel && (
                             <p
-                              key={doctor}
-                              className="m-0! text-sm font-bold text-[#123B56]"
+                              className="m-0! mb-3! text-[11px] font-bold uppercase tracking-[0.1em]"
+                              style={{
+                                color: color.accent,
+                              }}
                             >
-                              {doctor}
+                              {entry.departmentLabel}
                             </p>
-                          ))}
+                          )}
+
+                          {/* TIME */}
+                          <div className="flex items-center gap-2">
+                            <span
+                              className="flex size-8 shrink-0 items-center justify-center"
+                              style={{
+                                backgroundColor: color.background,
+
+                                color: color.accent,
+                              }}
+                            >
+                              <TimetableIcon name="clock" className="size-4" />
+                            </span>
+
+                            <div>
+                              <p className="m-0! text-[11px] leading-4 font-semibold text-[#819AA8]">
+                                Waktu Praktik
+                              </p>
+
+                              <p className="mt-0.5 mb-0! text-[14px] leading-5 font-bold text-[#123B56]">
+                                {entry.timeLabel}
+                              </p>
+                            </div>
+                          </div>
+
+                          {/* DIVIDER */}
+                          <div className="my-4 h-px bg-[#E1EDF2]" />
+
+                          {/* DOCTORS */}
+                          <div>
+                            <p className="m-0! text-[10px] font-bold uppercase tracking-[0.11em] text-[#8AA1AF]">
+                              {labels.doctors}
+                            </p>
+
+                            <div className="mt-2.5 space-y-2">
+                              {entry.doctors.map((doctor) => (
+                                <div
+                                  key={doctor}
+                                  className="flex items-start gap-2.5"
+                                >
+                                  <span className="mt-[5px] size-1.5 shrink-0 rounded-full bg-[#00A4E4]" />
+
+                                  <p className="m-0! text-[13px] leading-[1.55] font-bold text-[#123B56]">
+                                    {doctor}
+                                  </p>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* ROOM */}
+                          {entry.room && (
+                            <>
+                              <div className="my-4 h-px bg-[#E1EDF2]" />
+
+                              <div className="flex items-center gap-2 text-xs font-semibold text-[#66879A]">
+                                <TimetableIcon
+                                  name="location"
+                                  className="size-4 text-[#0077B6]"
+                                />
+
+                                {entry.room}
+                              </div>
+                            </>
+                          )}
                         </div>
-                      </div>
-                    </article>
-                  );
-                })}
+                      </article>
+                    );
+                  })
+                )}
               </div>
             </section>
           );
         })}
       </div>
-    </>
+    </div>
   );
 }

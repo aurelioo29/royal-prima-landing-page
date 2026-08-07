@@ -8,20 +8,18 @@ import { notFound } from "next/navigation";
 
 import {
   TIMETABLE_DAY_KEYS,
-  TIMETABLE_DEPARTMENT_KEYS,
+  TimetableCategoryFilter,
   TimetableDepartmentFilter,
   TimetableIcon,
   TimetablePosterSection,
   WeeklyTimetable,
   timetableConfig,
-  timetableEntries,
 } from "@/components/timetable";
 
 import type {
   ResolvedTimetableEntry,
+  TimetableCategory,
   TimetableDayOption,
-  TimetableDepartmentFilterKey,
-  TimetableDepartmentKey,
   TimetableDepartmentOption,
 } from "@/components/timetable";
 
@@ -31,8 +29,16 @@ import PageHero from "@/components/shared/page-hero";
 
 import { routing } from "@/i18n/routing";
 
+import { getHisDoctorSchedules } from "@/lib/his/doctor-schedules";
+
+import { getHisClinicLocations } from "@/lib/his/locations";
+
+import { createHisTimetableEntries } from "@/lib/his/timetable";
+
 type TimetableSearchParams = {
-  department?: string | string[];
+  location?: string | string[];
+
+  category?: string | string[];
 };
 
 type TimetablePageProps = {
@@ -42,6 +48,12 @@ type TimetablePageProps = {
 
   searchParams: Promise<TimetableSearchParams>;
 };
+
+/*
+ * HIS menggunakan cache:no-store.
+ * Jadi page ini memang dynamic.
+ */
+export const dynamic = "force-dynamic";
 
 function getSingleSearchParam(
   value: string | string[] | undefined,
@@ -53,14 +65,10 @@ function getSingleSearchParam(
   return value;
 }
 
-function isDepartmentKey(
+function isTimetableCategory(
   value: string | undefined,
-): value is TimetableDepartmentKey {
-  if (!value) {
-    return false;
-  }
-
-  return TIMETABLE_DEPARTMENT_KEYS.includes(value as TimetableDepartmentKey);
+): value is TimetableCategory {
+  return value === "jkn" || value === "nonjkn";
 }
 
 export async function generateMetadata({
@@ -74,6 +82,7 @@ export async function generateMetadata({
 
   const t = await getTranslations({
     locale,
+
     namespace: "TimetablePage.metadata",
   });
 
@@ -132,13 +141,83 @@ export default async function TimetablePage({
 
   const t = await getTranslations("TimetablePage");
 
-  const departmentQuery = getSingleSearchParam(query.department);
+  const requestedLocationId = getSingleSearchParam(query.location);
 
-  const activeDepartment: TimetableDepartmentFilterKey = isDepartmentKey(
-    departmentQuery,
+  const requestedCategory = getSingleSearchParam(query.category);
+
+  const activeCategory: TimetableCategory = isTimetableCategory(
+    requestedCategory,
   )
-    ? departmentQuery
-    : "all";
+    ? requestedCategory
+    : "nonjkn";
+
+  /*
+   * ===========================
+   * GET CLINICS FROM HIS
+   * ===========================
+   */
+
+  let locations = await getHisClinicLocations().catch((error) => {
+    console.error("Gagal mengambil HIS locations:", error);
+
+    return [];
+  });
+
+  /*
+   * Bersihkan duplicate jika suatu saat
+   * response API berubah.
+   */
+  locations = Array.from(
+    new Map(locations.map((location) => [location.id, location])).values(),
+  );
+
+  /*
+   * Kalau URL punya location yang valid,
+   * gunakan location tersebut.
+   *
+   * Kalau tidak ada query,
+   * pilih klinik pertama.
+   */
+  const activeLocation =
+    locations.find((location) => location.id === requestedLocationId) ??
+    locations[0] ??
+    null;
+
+  /*
+   * ===========================
+   * GET DOCTOR SCHEDULE
+   * ===========================
+   */
+
+  let scheduleLoadError = false;
+
+  const timetableEntries = activeLocation
+    ? await getHisDoctorSchedules({
+        locationId: activeLocation.id,
+
+        category: activeCategory,
+      })
+        .then((result) =>
+          createHisTimetableEntries({
+            location: activeLocation,
+
+            doctors: result.data ?? [],
+          }),
+        )
+        .catch((error) => {
+          console.error("Gagal mengambil HIS doctor schedules:", error);
+
+          scheduleLoadError = true;
+
+          return [];
+        })
+    : [];
+
+  /*
+   * ===========================
+   * RESOLVE UI DATA
+   * ===========================
+   */
 
   const days: TimetableDayOption[] = TIMETABLE_DAY_KEYS.map((day) => ({
     key: day,
@@ -146,47 +225,23 @@ export default async function TimetablePage({
     label: t(`days.${day}`),
   }));
 
-  function resolveEntry(
-    entry: (typeof timetableEntries)[number],
-  ): ResolvedTimetableEntry {
-    return {
+  const resolvedEntries: ResolvedTimetableEntry[] = timetableEntries.map(
+    (entry) => ({
       ...entry,
 
       dayLabel: t(`days.${entry.day}`),
 
-      departmentLabel: t(`departments.${entry.department}`),
-
       timeLabel: `${entry.startTime} – ${entry.endTime}`,
-    };
-  }
+    }),
+  );
 
-  const filteredEntries =
-    activeDepartment === "all"
-      ? timetableEntries
-      : timetableEntries.filter(
-          (entry) => entry.department === activeDepartment,
-        );
+  const departments: TimetableDepartmentOption[] = locations.map(
+    (location) => ({
+      key: location.id,
 
-  const resolvedEntries = filteredEntries.map(resolveEntry);
-
-  const departments: TimetableDepartmentOption[] = [
-    {
-      key: "all",
-
-      label: t("departments.all"),
-
-      count: timetableEntries.length,
-    },
-
-    ...TIMETABLE_DEPARTMENT_KEYS.map((department) => ({
-      key: department,
-
-      label: t(`departments.${department}`),
-
-      count: timetableEntries.filter((entry) => entry.department === department)
-        .length,
-    })),
-  ];
+      label: location.label || location.name,
+    }),
+  );
 
   return (
     <>
@@ -240,11 +295,12 @@ export default async function TimetablePage({
                   </p>
 
                   <h2 className="mt-4 mb-0! text-[36px] leading-[1.14] font-bold tracking-[-0.035em] text-[#123B56] sm:text-[46px]">
-                    {activeDepartment === "all"
-                      ? t("schedule.title")
-                      : t("schedule.filteredTitle", {
-                          department: t(`departments.${activeDepartment}`),
-                        })}
+                    {activeLocation
+                      ? t("schedule.filteredTitle", {
+                          department:
+                            activeLocation.label || activeLocation.name,
+                        })
+                      : t("schedule.title")}
                   </h2>
 
                   <p className="mt-5 mb-0! max-w-[720px] text-[15px] leading-8 text-[#57778C]">
@@ -262,35 +318,71 @@ export default async function TimetablePage({
               </Reveal>
             </div>
 
-            {/* Filter */}
+            {/* SERVICE TYPE */}
             <Reveal direction="up" distance={20} className="mt-10">
+              <div>
+                <p className="mb-3! text-xs font-bold uppercase tracking-[0.14em] text-[#7793A5]">
+                  {t("schedule.serviceType")}
+                </p>
+
+                <TimetableCategoryFilter
+                  activeCategory={activeCategory}
+                  activeDepartment={activeLocation?.id ?? null}
+                  generalLabel={t("schedule.generalCategory")}
+                  jknLabel={t("schedule.jknCategory")}
+                />
+              </div>
+            </Reveal>
+
+            {/* CLINIC FILTER */}
+            <Reveal direction="up" distance={20} className="mt-8">
               <TimetableDepartmentFilter
                 departments={departments}
-                activeDepartment={activeDepartment}
+                activeDepartment={activeLocation?.id ?? null}
+                category={activeCategory}
               />
             </Reveal>
+
+            {/* Schedule API Error */}
+            {scheduleLoadError && (
+              <Reveal direction="up" distance={20} className="mt-12">
+                <div className="border-l-4 border-[#E09B38] bg-[#FFF9EE] px-6 py-6">
+                  <h3 className="m-0! text-base font-bold text-[#123B56]">
+                    {t("schedule.loadErrorTitle")}
+                  </h3>
+
+                  <p className="mt-2 mb-0! text-sm leading-7 text-[#57778C]">
+                    {t("schedule.loadErrorDescription")}
+                  </p>
+                </div>
+              </Reveal>
+            )}
 
             {/* Schedule grid */}
-            <Reveal
-              direction="up"
-              distance={32}
-              amount={0.04}
-              className="mt-12"
-            >
-              <WeeklyTimetable
-                days={days}
-                entries={resolvedEntries}
-                labels={{
-                  room: t("schedule.room"),
+            {!scheduleLoadError && (
+              <Reveal
+                direction="up"
+                distance={32}
+                amount={0.04}
+                className="mt-12"
+              >
+                <WeeklyTimetable
+                  days={days}
+                  entries={resolvedEntries}
+                  labels={{
+                    room: t("schedule.room"),
 
-                  doctors: t("schedule.doctors"),
+                    doctors: t("schedule.doctors"),
 
-                  emptyTitle: t("schedule.emptyTitle"),
+                    noSchedule: t("schedule.noSchedule"),
 
-                  emptyDescription: t("schedule.emptyDescription"),
-                }}
-              />
-            </Reveal>
+                    emptyTitle: t("schedule.emptyTitle"),
+
+                    emptyDescription: t("schedule.emptyDescription"),
+                  }}
+                />
+              </Reveal>
+            )}
 
             {/* Schedule notice */}
             <Reveal direction="up" distance={20} className="mt-10">

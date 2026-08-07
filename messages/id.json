@@ -462,14 +462,14 @@
   "TimetablePage": {
     "metadata": {
       "title": "Jadwal Dokter",
-      "description": "Lihat jadwal praktik dokter dan layanan poliklinik RSU Royal Prima Medan.",
+      "description": "Lihat jadwal praktik dokter berdasarkan klinik dan jenis layanan di RSU Royal Prima Medan.",
       "imageAlt": "Jadwal dokter RSU Royal Prima Medan"
     },
 
     "hero": {
       "eyebrow": "Jadwal Dokter",
       "title": "Rencanakan kunjungan Anda dengan lebih mudah",
-      "description": "Temukan jadwal praktik dokter berdasarkan hari dan departemen sebelum melakukan kunjungan ke RSU Royal Prima Medan.",
+      "description": "Temukan jadwal praktik dokter berdasarkan klinik dan jenis layanan sebelum melakukan kunjungan ke RSU Royal Prima Medan.",
       "primaryAction": "Lihat Jadwal",
       "imageAlt": "Dokter RSU Royal Prima Medan",
       "imageBadge": "Informasi Jadwal",
@@ -485,37 +485,37 @@
       "saturday": "Sabtu"
     },
 
-    "departments": {
-      "all": "Semua Departemen",
-      "pediatrics": "Klinik Anak",
-      "obstetricsGynecology": "Kebidanan dan Kandungan",
-      "cardiology": "Klinik Jantung",
-      "pulmonology": "Klinik Paru",
-      "psychiatry": "Klinik Psikiatri",
-      "neurology": "Klinik Saraf"
-    },
-
     "schedule": {
       "eyebrow": "Jadwal Pelayanan",
-      "title": "Jadwal praktik dokter minggu ini",
+      "title": "Jadwal praktik dokter",
       "filteredTitle": "Jadwal {department}",
-      "description": "Pilih departemen untuk melihat jadwal dokter dan waktu pelayanan yang sesuai dengan kebutuhan Anda.",
+      "description": "Pilih klinik dan jenis layanan untuk melihat jadwal praktik dokter yang tersedia.",
       "resultCount": "{count} jadwal ditemukan",
+
+      "serviceType": "Jenis Layanan",
+      "generalCategory": "Umum / Non-JKN",
+      "jknCategory": "JKN / BPJS",
+
       "room": "Ruangan",
       "doctors": "Dokter",
+      "noSchedule": "Tidak ada jadwal praktik",
+
       "emptyTitle": "Jadwal belum tersedia",
-      "emptyDescription": "Belum tersedia jadwal untuk departemen yang dipilih. Silakan pilih departemen lainnya."
+      "emptyDescription": "Belum tersedia jadwal dokter untuk klinik dan jenis layanan yang dipilih. Silakan pilih klinik atau jenis layanan lainnya.",
+
+      "loadErrorTitle": "Jadwal dokter belum dapat dimuat",
+      "loadErrorDescription": "Terjadi kendala saat mengambil jadwal dokter dari sistem. Silakan coba kembali beberapa saat lagi."
     },
 
     "notice": {
       "title": "Konfirmasi jadwal sebelum berkunjung",
-      "description": "Jadwal dokter dapat berubah sewaktu-waktu karena kondisi pelayanan, tindakan medis, atau kebutuhan rumah sakit. Hubungi Contact Center untuk memastikan jadwal terbaru."
+      "description": "Jadwal praktik dokter dapat berubah sewaktu-waktu karena kondisi pelayanan, tindakan medis, atau kebutuhan rumah sakit. Hubungi Contact Center RSU Royal Prima Medan untuk memastikan jadwal terbaru sebelum berkunjung."
     },
 
     "poster": {
       "eyebrow": "Pelayanan Pasien",
       "title": "Sudah menemukan jadwal dokter yang sesuai?",
-      "description": "Lanjutkan dengan membuat janji temu atau hubungi Contact Center RSU Royal Prima Medan untuk mendapatkan bantuan informasi.",
+      "description": "Lanjutkan dengan membuat janji temu atau hubungi Contact Center RSU Royal Prima Medan untuk mendapatkan bantuan dan informasi lebih lanjut.",
       "imageAlt": "Pelayanan dokter RSU Royal Prima Medan",
       "appointmentAction": "Buat Janji Temu",
       "phoneAction": "Hubungi Contact Center"
